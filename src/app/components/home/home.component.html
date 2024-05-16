@@ -1,32 +1,47 @@
 <section class="home-container">
-  <header class="header">
-    <div class="logo">
-      <img src="assets/logo.webp" alt="HSKify Logo">
+
+  <section class="header">
+
+    <div class="left-side">
+      <div class="logo">
+        <img src="assets/logo.webp" alt="HSKify Logo">
+      </div>
+      <div class="intro-text">
+        <p>Bienvenido a HSKify<br>Tu puente hacia el dominio del chino. Cada día, un nuevo carácter te espera para explorar su significado, pronunciación y uso. Comienza tu viaje hacia la fluidez y éxito en el HSK con nosotros.</p>
+      </div>
+    </div>  
+
+    <div class="right-side">
+      <div class="word-of-the-day">
+        <h2>WORD OF THE DAY</h2>
+        <p class="hanzi">{{wordOfDay?.hanzi}}汉字</p>
+        <p class="pinyin">{{wordOfDay?.pinyin}}Hola que tal estás</p>
+
+      </div>
     </div>
-    <div class="word-of-the-day">
-      <h1>{{wordOfDay?.hanzi}}</h1>
-      <p>{{wordOfDay?.pinyin}}</p>
-    </div>
-  </header>
-  <div class="intro-text">
-    <p>Bienvenido a HSKify<br>Tu puente hacia el dominio del chino. Cada día, un nuevo carácter te espera para explorar su significado, pronunciación y uso. Comienza tu viaje hacia la fluidez y éxito en el HSK con nosotros.</p>
-  </div>
+
+
+  </section>
+ 
+
+
   <section class="options">
     <article class="option">
       <div class="icon"></div>
-      <p>VOCABULARIO</p>
+      <p>VOCABULARY</p>
     </article>
     <article class="option">
       <div class="icon"></div>
-      <p>GRAMÁTICA</p>
+      <p>GRAMMAR</p>
     </article>
     <article class="option">
       <div class="icon"></div>
-      <p>EJERCICIOS</p>
+      <p>MEMORY GAME</p>
     </article>
     <article class="option">
       <div class="icon"></div>
-      <p>OTRO</p>
+      <p>OTHER</p>
     </article>
   </section>
+
 </section>
