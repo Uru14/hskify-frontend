@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService, HanziSimpleResponse } from '../../services/api.service';
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, NgOptimizedImage],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -31,5 +32,5 @@ export class HomeComponent {
       }
     });
   }
-  
+
 }

@@ -1,7 +1,12 @@
 <nav class="navbar">
-  <a routerLink="/" class="logo">
-    HSK
-  </a>
+  <div class="logo-container">
+    <a routerLink="/" class="logo">HSK</a>
+
+    <label for="nav-toggle" class="menu-button">
+      <fa-icon [icon]="faBars"></fa-icon>
+    </label>
+  </div>
+  <input type="checkbox" id="nav-toggle" class="menu-toggle" style="display:none;"/>
   <ul class="navbar-links">
     <li><a routerLink="/">HOME</a></li>
     <li class="dropdown">

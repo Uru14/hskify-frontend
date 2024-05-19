@@ -7,7 +7,7 @@
 .header {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
   flex-wrap: wrap;
   background-color: #f0f0f0;
   font-weight: bold;
@@ -16,18 +16,20 @@
 
 .left-side{
   margin: 15px 50px;
-  flex: 50%;
+  flex: 20%;
 }
 
 .right-side {
+  text-align: center;
   margin: 15px 50px;
+  flex: 50%;
 }
 .logo img {
   width: 150px;
 }
 
-.word-of-the-day p {
-  text-align: center;
+.pinyin {
+  font-size: 30px;
 }
 
 .intro-text p {
@@ -53,12 +55,53 @@
   height: 100px;
   margin: 0 auto 10px;
 }
-
+.icon img{
+  max-width: 100%;
+  max-height: 100%;
+}
 .hanzi {
-  font-size: 150px; 
+  font-size: 150px;
   margin: 0;
 }
 
 h2 {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .left-side, .right-side {
+    flex: 100%;
+    margin: 15px 20px;
+  }
+
+  .options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hanzi {
+    font-size: 80px;
+  }
+
+  .pinyin {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .option .icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .options {
+    grid-template-columns: 1fr;
+  }
 }
