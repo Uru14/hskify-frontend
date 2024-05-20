@@ -1,0 +1,46 @@
+<div class="voc-container">
+  <h1>HSK1 VOCABULARY LIST</h1>
+  <div class="paginator">
+    <mat-icon class="icon" (click)="prevCards()">arrow_back</mat-icon>
+    <p>{{skipIndex+1}}/{{skipList.length}}</p>
+    <mat-icon class="icon" (click)="nextCards()">arrow_forward</mat-icon>
+  </div>
+  <div class="flashcards-container">
+      @for (char of listCharacters; track char) {
+        <mat-card class="card-style" (click)="showDetail(char.id)">
+          <mat-card-header class="card-header-style">
+            <mat-card-title>
+              {{ char.pinyin.toUpperCase() }}
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="hanzi">{{ char.hanzi }}</p>
+            <p>{{ char.translation.split(',')[0].toUpperCase() }}</p>
+          </mat-card-content>
+        </mat-card>
+      }
+  </div>
+  <div id="fondo" class="oculto">
+
+  </div>
+  <div id="modal" class="oculto">
+    <div class="left-column">
+      <mat-icon class="favorite-icon">favorite</mat-icon>
+
+      <div id="modal-hanzi" class="hanzi-container">
+
+      </div>
+      <div id="modal-frase" class="example-sentence">
+      </div>
+    </div>
+    <div class="right-column">
+      <div class="info">
+        <div id="modal-pinyin" class="pinyin"></div>
+        <div id="modal-translation" class="translation"></div>
+        <div id="modal-strokes" class="strokes"></div>
+        <div id="modal-other" class="other"></div>
+      </div>
+    </div>
+  </div>
+
+</div>

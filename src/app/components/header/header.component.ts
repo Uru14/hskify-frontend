@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
 import {RouterLink} from "@angular/router";
-import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import {MatIcon} from "@angular/material/icon";
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [
     RouterLink,
-    FontAwesomeModule
+    MatIcon
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  faBars = faBars;
 }

@@ -1,0 +1,147 @@
+.voc-container {
+  font-family: Arial, sans-serif;
+  max-width: 1366px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.flashcards-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card-style{
+  max-width: 200px;
+  background-color: #d8d8d8;
+  border-radius: 15px;
+  border: 1px solid black;
+  text-align: center;
+  margin-right: 30px;
+  flex: 0 0 calc(20% - 30px);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card-header-style {
+  background-color: #bdbdbd;
+  padding: 10px 0;
+  border-bottom: 1px solid #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mat-card-title {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.mat-card-content p {
+  font-size: 16px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.card-style {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-style:hover {
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hanzi {
+  font-size: 40px;
+}
+
+.paginator{
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: baseline;
+}
+.paginator mat-icon {
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+#fondo {
+  width:100%;
+  height:100%;
+  background-color:black;
+  opacity:.6;
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+.oculto {
+  display:none;
+}
+
+.card-modal {
+  display: flex;
+  padding: 50px;
+  position: fixed;
+  width: 80%;
+  max-width: 1200px;
+  min-height: 60%;
+  max-height: 90%;
+  overflow: auto;
+  box-shadow: 0px 0px 20px black;
+  border-radius: 15px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.left-column {
+  width: 60%; /* 60% del ancho para la columna izquierda */
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  width: 40%; /* 40% del ancho para la columna derecha */
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px; /* Espacio entre las columnas */
+}
+
+.hanzi-container {
+  font-size: 48px;
+  flex: 70%; /* 70% del espacio vertical para Hanzi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sentence {
+  flex: 30%; /* 30% del espacio vertical para la frase de ejemplo */
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  overflow: auto;
+}
+
+.info > div {
+  margin-bottom: 10px; /* Espacio entre elementos de información */
+}
+
+.favorite-icon {
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+

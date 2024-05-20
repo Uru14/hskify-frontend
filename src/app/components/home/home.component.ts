@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService, HanziSimpleResponse } from '../../services/api.service';
-import {NgOptimizedImage} from "@angular/common";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HttpClientModule, NgOptimizedImage],
+  imports: [HttpClientModule, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -20,6 +20,11 @@ export class HomeComponent {
   constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
+    this.getWordOfDay();
+
+  }
+
+  getWordOfDay() {
     this.apiService.getWordOfDay().subscribe({
       next: (data: HanziSimpleResponse) => {
         this.wordOfDay = data;
