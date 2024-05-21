@@ -16,10 +16,11 @@ export interface CharacterFlashcardResponse {
 
 export interface ExampleSentenceResponse {
   sentence: string;
-  pintranslationyin: string;
+  translation: string;
 }
 
 export interface CharacterDetailResponse {
+  id: number;
   hanzi: string;
   pinyin: string;
   translation: string;

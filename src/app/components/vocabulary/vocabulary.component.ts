@@ -3,12 +3,13 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIcon} from "@angular/material/icon";
 import {ApiService, CharacterDetailResponse, CharacterFlashcardResponse} from "../../services/api.service";
 import {error} from "@angular/compiler-cli/src/transformers/util";
+import {NgClass} from "@angular/common";
 
 
 @Component({
   selector: 'app-vocabulary',
   standalone: true,
-  imports: [MatCardModule, MatIcon],
+  imports: [MatCardModule, MatIcon, NgClass],
   templateUrl: './vocabulary.component.html',
   styleUrl: './vocabulary.component.css'
 })
@@ -17,7 +18,10 @@ export class VocabularyComponent {
   characterDetail: CharacterDetailResponse | undefined;
   skipList = [0,20,40,60,80,100,120,140];
   skipIndex = 0
+  isFavorite = false;
+
   constructor(private apiService: ApiService) {}
+
 
   ngOnInit(): void {
     this.getCardsInfo(this.skipIndex);
@@ -109,6 +113,30 @@ export class VocabularyComponent {
       if (sentences) {
         sentences.innerText = this.characterDetail.example_sentences[0].sentence;
       }
+      let sentencesTrans = document.getElementById("modal-frase-trans");
+      if (sentencesTrans) {
+        console.log(this.characterDetail.example_sentences[0])
+        sentencesTrans.innerText = this.characterDetail.example_sentences[0].translation.toUpperCase();
+      }
+    }
+  }
+
+  addFav(id:number | undefined) {
+    console.log(id);
+    this.isFavorite = !this.isFavorite;
+
+  }
+
+  closeModal(){
+    console.log('aaaa')
+    let fondo = document.getElementById("fondo");
+    if (fondo){
+      fondo.classList.add("oculto")
+    }
+
+    let modal = document.getElementById("modal");
+    if (modal){
+      modal.classList.remove("card-modal")
     }
   }
 }

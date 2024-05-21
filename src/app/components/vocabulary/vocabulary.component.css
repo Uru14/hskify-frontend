@@ -106,42 +106,58 @@
 }
 
 .left-column {
-  width: 60%; /* 60% del ancho para la columna izquierda */
+  width: 60%;
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .right-column {
-  width: 40%; /* 40% del ancho para la columna derecha */
+  width: 40%;
   display: flex;
   flex-direction: column;
-  padding-left: 20px; /* Espacio entre las columnas */
+  padding-left: 20px;
+  text-align: left;
 }
 
 .hanzi-container {
-  font-size: 48px;
-  flex: 70%; /* 70% del espacio vertical para Hanzi */
+  font-size: 100px;
+  flex: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .example-sentence {
-  flex: 30%; /* 30% del espacio vertical para la frase de ejemplo */
-  background-color: #f0f0f0;
+  flex: 20%;
   display: flex;
   align-items: center;
   padding: 10px;
   overflow: auto;
+  font-size: 25px;
+  color: darkblue;
+
 }
 
 .info > div {
-  margin-bottom: 10px; /* Espacio entre elementos de información */
+  margin-bottom: 60px;
+  font-size: 25px;
+  color: darkblue;
 }
 
 .favorite-icon {
+  display: flex;
   align-self: flex-start;
-  margin-bottom: 10px;
+  font-size: 35px;
+  flex: 10%;
+  width: 100%;
+  cursor: pointer;
 }
 
+.white {
+  color: #b6b6b6;
+}
 
+.red {
+  color: red;
+}
