@@ -4,21 +4,22 @@ import {MatIcon} from "@angular/material/icon";
 import {ApiService, CharacterDetailResponse, CharacterFlashcardResponse} from "../../services/api.service";
 import {error} from "@angular/compiler-cli/src/transformers/util";
 import {NgClass} from "@angular/common";
+import { FlashcardDetailComponent } from '../flashcard-detail/flashcard-detail.component';
 
 
 @Component({
   selector: 'app-vocabulary',
   standalone: true,
-  imports: [MatCardModule, MatIcon, NgClass],
+  imports: [MatCardModule, MatIcon, NgClass, FlashcardDetailComponent],
   templateUrl: './vocabulary.component.html',
   styleUrl: './vocabulary.component.css'
 })
 export class VocabularyComponent {
+
   listCharacters: CharacterFlashcardResponse[] | undefined;
   characterDetail: CharacterDetailResponse | undefined;
   skipList = [0,20,40,60,80,100,120,140];
   skipIndex = 0
-  isFavorite = false;
 
   constructor(private apiService: ApiService) {}
 
@@ -66,7 +67,6 @@ export class VocabularyComponent {
     this.apiService.getCharacterDetail(id).subscribe({
       next: (data: CharacterDetailResponse) => {
         this.characterDetail = data;
-        this.updateModal();
       },
       error: (error) => {
         console.error('There was an error!', error);
@@ -76,67 +76,15 @@ export class VocabularyComponent {
       }
     })
 
-  }
-
-  updateModal(){
     let modal = document.getElementById("modal");
     if (modal){
-      modal.classList.add("card-modal")
+      modal.classList.remove("oculto")
     }
     let fondo = document.getElementById("fondo");
     if (fondo){
       fondo.classList.remove("oculto")
     }
-    if (this.characterDetail) {
-      let hanzi = document.getElementById("modal-hanzi");
-      if (hanzi) {
-        hanzi.innerText = this.characterDetail.hanzi;
-      }
-
-      let pinyin = document.getElementById("modal-pinyin");
-      if (pinyin) {
-        pinyin.innerText = this.characterDetail.pinyin;
-      }
-
-      let strokes = document.getElementById("modal-strokes");
-      if (strokes) {
-        strokes.innerText = this.characterDetail.stroke_count.toString();
-      }
-
-      let translation = document.getElementById("modal-translation");
-      if (translation) {
-        console.log("la translation es: ", this.characterDetail.translation)
-        translation.innerText = this.characterDetail.translation.split(',')[0].toUpperCase();
-      }
-
-      let sentences = document.getElementById("modal-frase");
-      if (sentences) {
-        sentences.innerText = this.characterDetail.example_sentences[0].sentence;
-      }
-      let sentencesTrans = document.getElementById("modal-frase-trans");
-      if (sentencesTrans) {
-        console.log(this.characterDetail.example_sentences[0])
-        sentencesTrans.innerText = this.characterDetail.example_sentences[0].translation.toUpperCase();
-      }
-    }
   }
 
-  addFav(id:number | undefined) {
-    console.log(id);
-    this.isFavorite = !this.isFavorite;
-
-  }
-
-  closeModal(){
-    console.log('aaaa')
-    let fondo = document.getElementById("fondo");
-    if (fondo){
-      fondo.classList.add("oculto")
-    }
-
-    let modal = document.getElementById("modal");
-    if (modal){
-      modal.classList.remove("card-modal")
-    }
-  }
+  
 }

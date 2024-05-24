@@ -20,33 +20,9 @@
         </mat-card>
       }
   </div>
-  <div id="fondo" class="oculto" (click)="closeModal()">
 
-  </div>
   <div id="modal" class="oculto">
-    <div class="left-column">
-      <mat-icon class="favorite-icon" [ngClass]="{ 'white': !isFavorite, 'red': isFavorite }" (click)="addFav(this.characterDetail?.id)">
-        favorite
-      </mat-icon>
-
-      <div id="modal-hanzi" class="hanzi-container"></div>
-      <h2>SENTENCE EXAMPLE</h2>
-      <div id="modal-frase" class="example-sentence"></div>
-      <h2>SENTENCE EXAMPLE TRANSLATION</h2>
-      <div id="modal-frase-trans" class="example-sentence"></div>
-
-    </div>
-    <div class="right-column">
-      <div class="info">
-        <h2>PINYIN</h2>
-        <div id="modal-pinyin" class="pinyin"></div>
-        <h2>TRANSLATION</h2>
-        <div id="modal-translation" class="translation"></div>
-        <h2>NUMBER OF STROKES</h2>
-        <div id="modal-strokes" class="strokes"></div>
-        <div id="modal-other" class="other"></div>
-      </div>
-    </div>
+    <app-flashcard-detail [charDetail]="characterDetail"></app-flashcard-detail>
   </div>
 
 </div>

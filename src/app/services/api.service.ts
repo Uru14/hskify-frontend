@@ -51,4 +51,6 @@ export class ApiService {
   getCharacterDetail(id:number): Observable<CharacterDetailResponse> {
     return this.http.get<CharacterDetailResponse>(`${this.apiUrl}/characters/${id}`);
   }
+
+  addFavorite(charId:number, userId:number)
 }
