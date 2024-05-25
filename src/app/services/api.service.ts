@@ -52,5 +52,5 @@ export class ApiService {
     return this.http.get<CharacterDetailResponse>(`${this.apiUrl}/characters/${id}`);
   }
 
-  addFavorite(charId:number, userId:number)
+  /*addFavorite(charId:number, userId:number)*/
 }
