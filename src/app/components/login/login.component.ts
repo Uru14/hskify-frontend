@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {FormsModule} from "@angular/forms";
+import {ApiService} from "../../services/api.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -14,11 +16,21 @@ export class LoginComponent {
   email: string;
   password: string;
 
-  constructor() {
+  constructor(private apiService: ApiService, private router: Router) {
   }
 
   login(){
-    console.log(this.email)
-    console.log(this.password)
+    this.apiService.login(this.email, this.password).subscribe({
+      next: (response) => {
+        this.apiService.setToken(response.access_token);
+        this.router.navigate(['/']);
+      },
+      error: (error) => {
+        console.error('There was an error!', error);
+      },
+      complete: () => {
+        console.log('Request complete');
+      }
+    })
   }
 }

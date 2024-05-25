@@ -1,6 +1,13 @@
 <div class="register">
   <form method="post" class="custom-form">
     <input
+      type="text"
+      [(ngModel)]="name"
+      name="name"
+      placeholder="Username"
+      required="required"
+    >
+    <input
       type="email"
       [(ngModel)]="email"
       name="email"
@@ -17,7 +24,7 @@
     <input
       type="password"
       [(ngModel)]="confirmPassword"
-      name="password"
+      name="confirmPassword"
       placeholder="Repeat the password"
       required="required"
     />
