@@ -27,7 +27,15 @@ export interface CharacterDetailResponse {
   translation: string;
   stroke_count: string;
   hsk_level: number;
-  example_sentences: ExampleSentenceResponse[]
+  example_sentences: ExampleSentenceResponse[];
+  isFavorite: boolean;
+}
+
+export interface UserResponse {
+  id: number;
+  email: string;
+  name: string;
+  registration_date: Date
 }
 
 @Injectable({
@@ -50,13 +58,22 @@ export class ApiService {
   }
 
   setToken(token: string) {
-    this.cookies.set("token", token);
+    // expires: 2 ==> 2 días. Es buena práctica poner un path, por defecto se recomienda '/'
+    this.cookies.set("token", token, { expires: 2, path: '/'});
   }
   getToken() {
     return this.cookies.get("token");
   }
 
+  deleteToken(){
+    this.cookies.delete("token");
+  }
 
+  getUserLogged() {
+    const token = this.getToken();
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.get<UserResponse>(`${this.apiUrl}/users/me`, { headers });
+  }
 
 
   getWordOfDay(): Observable<HanziSimpleResponse> {
@@ -69,9 +86,21 @@ export class ApiService {
     return this.http.get<CharacterFlashcardResponse[]>(`${this.apiUrl}/characters/`, { params });
   }
 
-  getCharacterDetail(id:number): Observable<CharacterDetailResponse> {
-    return this.http.get<CharacterDetailResponse>(`${this.apiUrl}/characters/${id}`);
+
+  getAllCharacters(): Observable<CharacterFlashcardResponse[]>{
+    return this.http.get<CharacterFlashcardResponse[]>(`${this.apiUrl}/characters/all`);
   }
 
-  /*addFavorite(charId:number, userId:number)*/
+
+  getCharacterDetail(id:number): Observable<CharacterDetailResponse> {
+    const token = this.getToken();
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.get<CharacterDetailResponse>(`${this.apiUrl}/characters/${id}`, { headers });
+  }
+
+  addFavorite(charId:number): Observable<any>{
+    const token = this.getToken();
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.post<any>(`${this.apiUrl}/characters/${charId}/favorite`, {}, {headers})
+  }
 }

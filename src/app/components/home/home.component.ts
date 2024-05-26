@@ -15,7 +15,7 @@ import {RouterLink} from "@angular/router";
 @Injectable()
 export class HomeComponent {
 
-  wordOfDay: HanziSimpleResponse  | undefined;
+  wordOfDay: HanziSimpleResponse;
 
   constructor(private apiService: ApiService) {}
 

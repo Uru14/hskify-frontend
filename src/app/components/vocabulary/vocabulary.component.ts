@@ -16,8 +16,8 @@ import { FlashcardDetailComponent } from '../flashcard-detail/flashcard-detail.c
 })
 export class VocabularyComponent {
 
-  listCharacters: CharacterFlashcardResponse[] | undefined;
-  characterDetail: CharacterDetailResponse | undefined;
+  listCharacters: CharacterFlashcardResponse[];
+  characterDetail: CharacterDetailResponse;
   skipList = [0,20,40,60,80,100,120,140];
   skipIndex = 0
 
@@ -86,5 +86,5 @@ export class VocabularyComponent {
     }
   }
 
-  
+
 }
