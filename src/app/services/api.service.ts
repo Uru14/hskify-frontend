@@ -72,6 +72,7 @@ export class ApiService {
   getUserLogged() {
     const token = this.getToken();
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    console.log(token)
     return this.http.get<UserResponse>(`${this.apiUrl}/users/me`, { headers });
   }
 

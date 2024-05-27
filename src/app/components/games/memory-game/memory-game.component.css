@@ -26,15 +26,22 @@
   gap: 0.6em;
 }*/
 
-body {
+/*body {
   margin: 0;
-  font-family: "Poppins", sans-serif; /* Aplicamos la fuente globalmente */
+  font-family: "Poppins", sans-serif; 
+}*/
+
+body.container {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Estilos específicos para el contenedor principal */
 .wrapper {
   max-width: 1366px;
-  width: 26.87em;
   padding: 2.5em 3em;
   background-color: #ffffff;
   position: absolute;
@@ -43,9 +50,10 @@ body {
   top: 50%;
   border-radius: 0.6em;
   box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
+  transition: width 0.3s ease;
+  margin-top: 150px;
 }
 
-/* Estilos específicos para el contenedor del juego */
 .game-container {
   position: relative;
   width: 100%;
@@ -141,4 +149,24 @@ button {
 #result h4 {
   font-size: 1.8em;
   margin: 0.6em 0 1em 0;
+}
+
+button:not([disabled]):hover {
+  background-color: #e0e0e0;
+}
+
+button.selected {
+  background-color: #d0d0d0;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.mode-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.mode-buttons button {
+  margin: 0 10px;
 }

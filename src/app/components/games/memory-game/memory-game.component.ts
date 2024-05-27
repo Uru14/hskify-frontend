@@ -32,6 +32,9 @@ export class MemoryGameComponent implements OnInit {
   firstCardValue: string = '';
   interval: any;
   items: CharacterFlashcardResponse[] = [];
+  gameMode: number;
+  selectedButton: HTMLElement | null = null;
+  //wrapperWidth: string = '26.87em';
 
   constructor(private apiService: ApiService) { }
 
@@ -77,7 +80,7 @@ export class MemoryGameComponent implements OnInit {
     this.moves.innerHTML = `<span>Moves:</span>${this.movesCount}`;
   }
 
-  generateRandom(size: number = 4): CharacterFlashcardResponse[] {
+  generateRandom(size: number = this.gameMode): CharacterFlashcardResponse[] {
     let tempArray = [...this.items];
     let cardValues: CharacterFlashcardResponse[] = [];
     size = (size * size) / 2;
@@ -89,7 +92,7 @@ export class MemoryGameComponent implements OnInit {
     return cardValues;
   }
 
-  matrixGenerator(cardValues: CharacterFlashcardResponse[], size: number = 4): void {
+  matrixGenerator(cardValues: CharacterFlashcardResponse[], size: number = this.gameMode): void {
     this.gameContainer.innerHTML = "";
     cardValues = [...cardValues, ...cardValues];
     cardValues.sort(() => Math.random() - 0.5);
@@ -140,6 +143,7 @@ export class MemoryGameComponent implements OnInit {
   }
 
   startGame(): void {
+    
     this.movesCount = 0;
     this.seconds = 0;
     this.minutes = 0;
@@ -163,5 +167,28 @@ export class MemoryGameComponent implements OnInit {
     this.winCount = 0;
     let cardValues = this.generateRandom();
     this.matrixGenerator(cardValues);
+  }
+
+  selectMode(event: Event) {
+    const option = event.target as HTMLElement;
+
+    if (this.selectedButton) {
+      this.selectedButton.classList.remove('selected');
+    }
+
+    option.classList.add('selected');
+    this.selectedButton = option;
+    
+    if (option.id == 'easy'){
+      this.gameMode = 4;
+      //this.wrapperWidth = '26.87em';
+    } else if (option.id == 'medium') {
+      this.gameMode = 6;
+      //this.wrapperWidth = '40.5em';
+    } else {
+      this.gameMode = 8;
+      //this.wrapperWidth = '54.13em';
+    }
+    
   }
 }

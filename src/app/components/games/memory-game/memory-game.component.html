@@ -1,5 +1,5 @@
-<body>
-  <div class="wrapper">
+<body class="container">
+  <div class="wrapper" >
     <div class="stats-container">
       <div id="moves-count"></div>
       <div id="time"></div>
@@ -8,7 +8,13 @@
     <button id="stop" class="hide">Stop Game</button>
   </div>
   <div class="controls-container">
+    <div class="mode-buttons">
+      <button id="easy" (click)="selectMode($event)">Easy Game Mode</button>
+      <button id="medium" (click)="selectMode($event)">Medium Game Mode</button>
+      <button id="hard" (click)="selectMode($event)">Hard Game Mode</button>
+    </div>
     <p id="result"></p>
-    <button id="start">Start Game</button>
+    <button id="start" [disabled]="!gameMode">Start Game</button>
+
   </div>
 </body>
