@@ -28,7 +28,7 @@ export interface CharacterDetailResponse {
   stroke_count: string;
   hsk_level: number;
   example_sentences: ExampleSentenceResponse[];
-  isFavorite: boolean;
+  is_favorite: boolean;
 }
 
 export interface UserResponse {

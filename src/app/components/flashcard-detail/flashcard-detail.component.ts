@@ -20,7 +20,9 @@ export class FlashcardDetailComponent {
   }
   ngOnChanges() {
     if (this.charDetail){
-      this.isFavorite = this.charDetail.isFavorite
+      console.log('char ', this.charDetail.is_favorite)
+      this.isFavorite = this.charDetail.is_favorite
+      console.log(this.isFavorite)
     }
     console.log('Character Detail:', this.charDetail);
   }
