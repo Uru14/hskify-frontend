@@ -54,6 +54,7 @@ body.container {
   margin-top: 150px;
 }
 
+
 .game-container {
   position: relative;
   width: 100%;
@@ -169,4 +170,15 @@ button.selected {
 
 .mode-buttons button {
   margin: 0 10px;
+}
+
+#score {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#score span {
+  color: #333;
 }

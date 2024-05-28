@@ -1,10 +1,7 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {ApiService, CharacterFlashcardResponse} from "../../../services/api.service";
 
-interface Item {
-  name: string;
-  image: string;
-}
+
 
 @Component({
   selector: 'app-memory-game',
@@ -20,6 +17,7 @@ export class MemoryGameComponent implements OnInit {
   seconds: number = 0;
   minutes: number = 0;
   moves: HTMLElement;
+  wrapper: HTMLElement;
   timeValue: HTMLElement;
   startButton: HTMLElement;
   stopButton: HTMLElement;
@@ -34,12 +32,17 @@ export class MemoryGameComponent implements OnInit {
   items: CharacterFlashcardResponse[] = [];
   gameMode: number;
   selectedButton: HTMLElement | null = null;
-  //wrapperWidth: string = '26.87em';
-
+  selectedButton2: HTMLElement | null = null;
+  difficulty: string = 'easy';
+  timeScoreBase: number = 100;
+  moveScoreBase: number = 10; 
+  totalScore: number = 0;
+  cardValue1: 'hanzi' | 'pinyin' | 'translation' = 'hanzi';
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
     this.moves = document.getElementById("moves-count")!;
+    this.wrapper = document.getElementById("wrapper")!;
     this.timeValue = document.getElementById("time")!;
     this.startButton = document.getElementById("start")!;
     this.stopButton = document.getElementById("stop")!;
@@ -62,6 +65,8 @@ export class MemoryGameComponent implements OnInit {
         console.log('Request complete');
       }
     })
+
+    
   }
 
   timeGenerator(): void {
@@ -89,6 +94,7 @@ export class MemoryGameComponent implements OnInit {
       cardValues.push(tempArray[randomIndex]);
       tempArray.splice(randomIndex, 1);
     }
+    console.log(cardValues)
     return cardValues;
   }
 
@@ -96,14 +102,34 @@ export class MemoryGameComponent implements OnInit {
     this.gameContainer.innerHTML = "";
     cardValues = [...cardValues, ...cardValues];
     cardValues.sort(() => Math.random() - 0.5);
+    let isHanzi = true;
+
     for (let i = 0; i < size * size; i++) {
+      const randomIndex = Math.floor(Math.random() * cardValues.length);
+      const card = cardValues[randomIndex];
+  
+      let cardContent: string;
+      if (isHanzi) {
+        cardContent = card.hanzi;
+      } else {
+        if (this.cardValue1 === 'translation') {
+          const translations = card.translation.split(',');
+          cardContent = translations.length > 0 ? translations[0].trim() : '';
+        } else {
+          cardContent = card[this.cardValue1];
+        }
+      }
+  
       this.gameContainer.innerHTML += `
-      <div class="card-container" data-card-value="${cardValues[i].id}">
+      <div class="card-container" data-card-value="${card.id}">
         <div class="card-before">?</div>
         <div class="card-after">
-          <p class="image">${cardValues[i].hanzi}</p>
+          <p class="image">${cardContent}</p>
         </div>
       </div>`;
+  
+      cardValues.splice(randomIndex, 1); // Remover la carta seleccionada para evitar repeticiones
+      isHanzi = !isHanzi;
     }
     (this.gameContainer as HTMLElement).style.gridTemplateColumns = `repeat(${size},auto)`;
     this.cards = document.querySelectorAll(".card-container");
@@ -126,6 +152,7 @@ export class MemoryGameComponent implements OnInit {
               if (this.winCount == Math.floor(cardValues.length / 2)) {
                 this.result.innerHTML = `<h2>You Won</h2><h4>Moves: ${this.movesCount}</h4>`;
                 this.stopGame();
+                this.calculateScore();
               }
             } else {
               let [tempFirst, tempSecond] = [this.firstCard, this.secondCard];
@@ -150,6 +177,7 @@ export class MemoryGameComponent implements OnInit {
     this.controls.classList.add("hide");
     this.stopButton.classList.remove("hide");
     this.startButton.classList.add("hide");
+    this.wrapper.classList.remove("hide");
     this.moves.innerHTML = `<span>Moves:</span> ${this.movesCount}`;
     this.interval = setInterval(() => this.timeGenerator(), 1000);
     this.initializer();
@@ -159,6 +187,7 @@ export class MemoryGameComponent implements OnInit {
     this.controls.classList.remove("hide");
     this.stopButton.classList.add("hide");
     this.startButton.classList.remove("hide");
+    this.wrapper.classList.add("hide");
     clearInterval(this.interval);
   }
 
@@ -181,14 +210,53 @@ export class MemoryGameComponent implements OnInit {
     
     if (option.id == 'easy'){
       this.gameMode = 4;
-      //this.wrapperWidth = '26.87em';
+      this.difficulty = 'easy'; 
     } else if (option.id == 'medium') {
       this.gameMode = 6;
-      //this.wrapperWidth = '40.5em';
+      this.difficulty = 'medium'; 
     } else {
       this.gameMode = 8;
-      //this.wrapperWidth = '54.13em';
+      this.difficulty = 'hard';
     }
     
+  }
+
+  selectMode2(event: Event) {
+    const option = event.target as HTMLElement;
+
+    if (this.selectedButton2) {
+      this.selectedButton2.classList.remove('selected');
+    }
+
+    option.classList.add('selected');
+    this.selectedButton2 = option;
+    
+    switch (option.id) {
+      case 'hanzi-hanzi':
+          this.cardValue1 = 'hanzi';
+          break;
+      case 'hanzi-pinyin':
+          this.cardValue1 = 'pinyin';
+          break;
+      case 'hanzi-trans':
+          this.cardValue1 = 'translation';
+          break;
+  }
+    
+  }
+
+  calculateScore(): void {
+    
+    const timeScore = Math.max(0, this.timeScoreBase - (this.minutes * 60 + this.seconds)); 
+
+    const moveScore = this.moveScoreBase * this.movesCount;
+
+    this.totalScore = Math.max(0, 1000 - (timeScore + moveScore));
+    console.log(`Tu puntuación total es: ${this.totalScore}`); 
+
+    const scoreElement = document.getElementById("score");
+    if (scoreElement) {
+      scoreElement.innerHTML = `<span>Score:</span> ${this.totalScore}`;
+    }
   }
 }
