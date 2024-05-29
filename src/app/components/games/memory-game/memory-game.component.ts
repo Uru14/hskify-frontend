@@ -38,6 +38,7 @@ export class MemoryGameComponent implements OnInit {
   moveScoreBase: number = 10; 
   totalScore: number = 0;
   cardValue1: 'hanzi' | 'pinyin' | 'translation' = 'hanzi';
+  game_mode: string;
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
@@ -105,31 +106,17 @@ export class MemoryGameComponent implements OnInit {
     let isHanzi = true;
 
     for (let i = 0; i < size * size; i++) {
-      const randomIndex = Math.floor(Math.random() * cardValues.length);
-      const card = cardValues[randomIndex];
-  
-      let cardContent: string;
-      if (isHanzi) {
-        cardContent = card.hanzi;
-      } else {
-        if (this.cardValue1 === 'translation') {
-          const translations = card.translation.split(',');
-          cardContent = translations.length > 0 ? translations[0].trim() : '';
-        } else {
-          cardContent = card[this.cardValue1];
-        }
-      }
-  
-      this.gameContainer.innerHTML += `
-      <div class="card-container" data-card-value="${card.id}">
-        <div class="card-before">?</div>
-        <div class="card-after">
-          <p class="image">${cardContent}</p>
-        </div>
-      </div>`;
-  
-      cardValues.splice(randomIndex, 1); // Remover la carta seleccionada para evitar repeticiones
-      isHanzi = !isHanzi;
+        const cardContent = isHanzi ? cardValues[i].hanzi : (this.cardValue1 === 'translation' ? cardValues[i].translation.split(',')[0] : cardValues[i][this.cardValue1]);
+
+        this.gameContainer.innerHTML += `
+        <div class="card-container" data-card-value="${cardValues[i].id}">
+            <div class="card-before">?</div>
+            <div class="card-after">
+                <p class="image">${cardContent}</p>
+            </div>
+        </div>`;
+
+        isHanzi = !isHanzi;
     }
     (this.gameContainer as HTMLElement).style.gridTemplateColumns = `repeat(${size},auto)`;
     this.cards = document.querySelectorAll(".card-container");
@@ -234,12 +221,15 @@ export class MemoryGameComponent implements OnInit {
     switch (option.id) {
       case 'hanzi-hanzi':
           this.cardValue1 = 'hanzi';
+          this.game_mode = 'hanzi-hanzi'
           break;
       case 'hanzi-pinyin':
           this.cardValue1 = 'pinyin';
+          this.game_mode = 'hanzi-pinyin'
           break;
       case 'hanzi-trans':
           this.cardValue1 = 'translation';
+          this.game_mode = 'hanzi-translation'
           break;
   }
     
@@ -258,5 +248,17 @@ export class MemoryGameComponent implements OnInit {
     if (scoreElement) {
       scoreElement.innerHTML = `<span>Score:</span> ${this.totalScore}`;
     }
+
+    this.apiService.addScore(1, this.totalScore, this.difficulty, this.game_mode).subscribe({
+      next: (response) => {
+        console.log('response: ', response);
+      },
+      error: (error) => {
+        console.error('There was an error!', error);
+      },
+      complete: () => {
+        console.log('Request complete');
+      }
+    })
   }
 }

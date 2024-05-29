@@ -104,4 +104,11 @@ export class ApiService {
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     return this.http.post<any>(`${this.apiUrl}/characters/${charId}/favorite`, {}, {headers})
   }
+
+  addScore(gameId:number, score:number, difficulty:string, parameters:string): Observable<any> {
+    const token = this.getToken();
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    const body = {score, difficulty, parameters}
+    return this.http.post<any>(`${this.apiUrl}/game/${gameId}/score`, body, {headers})
+  }
 }
