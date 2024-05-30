@@ -143,3 +143,21 @@
     display: block;
   }
 }
+
+.navbar img {
+  text-align: center;
+  width: 24px; /* Ancho deseado */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin: 0 auto;
+}
+
+.dropdown-content li {
+  padding: 10px;
+  cursor: pointer;
+  display: flex; /* Usa flexbox */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.dropdown-content li img {
+  margin-right: 5px; /* Espacio entre la imagen y el texto */
+}

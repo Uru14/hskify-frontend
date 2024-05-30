@@ -1,18 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
 import { ApiService, HanziSimpleResponse } from '../../services/api.service';
 import {RouterLink} from "@angular/router";
 import { TranslateModule } from '@ngx-translate/core';
-import { LanguageService } from '../../services/language.service';
 
-@Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [HttpClientModule, RouterLink, TranslateModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
-})
+@Component({ selector: 'app-home',
+    standalone: true,
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css', 
+    imports: [RouterLink, TranslateModule], 
+   })
 
 @Injectable()
 export class HomeComponent {

@@ -19,10 +19,17 @@
     <li><a routerLink="/practice">{{'HEADER.PRACTICE' | translate}}</a></li>
     <li><a routerLink="/profile">{{'HEADER.PROFILE' | translate}}</a></li>
     <li class="dropdown">
+      <a href="#" class="dropbtn">{{'HEADER.LANGUAGE' | translate}}</a>
       <ul class="dropdown-content">
-        <span (click)="switchLanguage('en')" class="fi fi-gr"></span> <span class="fi fi-gr fis"></span>
-        <li><button >English</button></li>
-        <li><button (click)="switchLanguage('es')">Español</button></li>
+        <li (click)="switchLanguage('en')">
+          <img src="assets/flags/en.png" alt="English"> 
+        </li>
+        <li (click)="switchLanguage('es')">
+          <img src="assets/flags/es.png" alt="Español">
+        </li>
+        <li (click)="switchLanguage('ca')">
+          <img src="assets/flags/ca.png" alt="Català">
+        </li>
       </ul>
     </li>
     

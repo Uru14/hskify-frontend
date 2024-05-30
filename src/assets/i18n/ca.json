@@ -1,0 +1,35 @@
+{
+    "HEADER": {
+        "HOME": "INICI",
+        "LEARN": "APRENDRE",
+        "GRAMMAR": "GRAMÀTICA",
+        "VOCABULARY": "VOCABULARI",
+        "PRACTICE": "PRACTICAR",
+        "PROFILE": "PERFIL",
+        "LANGUAGE": "IDIOMA"
+    },
+    "HOME": {
+        "WELCOME": "Benvingut a HSKify",
+        "WELCOME-MESSAGE": "El teu pont cap al domini del xinès. Cada dia, un nou caràcter et espera per explorar el seu significat, pronunciació i ús. Comença el teu viatge cap a la fluïdesa i èxit en el HSK amb nosaltres.",
+        "DAILY-WORD": "PARAULA DEL DIA",
+        "OPTIONS": {
+            "VOCABULARY": "VOCABULARI",
+            "GRAMMAR": "GRAMÀTICA",
+            "MEMORY-GAME": "JOC DE MEMÒRIA",
+            "OTHER": "ALTRE"
+        }
+    },
+    "VOCABULARY": {
+        "HEADER": "LLISTA DE VOCABULARI HSK1"
+    },
+    "MEMORY-GAME": {
+        "STOP": "Aturar joc",
+        "START": "Començar joc",
+        "HAN-HAN": "Hanzi-Hanzi",
+        "HAN-PIN": "Hanzi-Pinyin",
+        "HAN-TRANS": "Hanzi-Traducció",
+        "EASY-MODE": "Fàcil",
+        "MEDIUM-MODE": "Mitjà",
+        "HARD-MODE": "Difícil"
+    }
+}
