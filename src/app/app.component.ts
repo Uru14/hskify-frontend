@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {Router, RouterOutlet} from '@angular/router';
 import {HeaderComponent} from "./components/header/header.component";
 import {ApiService} from "./services/api.service";
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,9 @@ import {ApiService} from "./services/api.service";
 export class AppComponent {
   title = 'hskify-frontend';
 
-  constructor(private apiService: ApiService, private router: Router) {}
+  constructor(private apiService: ApiService, private router: Router, private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+  }
 
   ngOnInit() {
     const token = this.apiService.getToken();

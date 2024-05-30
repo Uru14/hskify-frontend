@@ -7,13 +7,14 @@
         <img src="assets/logo.webp" alt="HSKify Logo">
       </div>
       <div class="intro-text">
-        <p>Bienvenido a HSKify<br>Tu puente hacia el dominio del chino. Cada día, un nuevo carácter te espera para explorar su significado, pronunciación y uso. Comienza tu viaje hacia la fluidez y éxito en el HSK con nosotros.</p>
+        <p>{{"HOME.WELCOME" | translate}}</p>
+        <p>{{"HOME.WELCOME-MESSAGE" | translate}}</p>
       </div>
     </div>
 
     <div class="right-side">
       <div class="word-of-the-day">
-        <h2>WORD OF THE DAY</h2>
+        <h2>{{"HOME.DAILY-WORD" | translate}}</h2>
         <p class="hanzi">{{wordOfDay.hanzi}}</p>
         <p class="pinyin">{{wordOfDay.pinyin.toUpperCase()}}</p>
 
@@ -28,19 +29,19 @@
   <section class="options">
     <article class="option" routerLink="/vocabulary">
       <div class="icon"><img src="assets/vocabulary.webp" alt="image for vocabulary option"></div>
-      <p>VOCABULARY</p>
+      <p>{{"HOME.OPTIONS.VOCABULARY" | translate}}</p>
     </article>
     <article class="option">
       <div class="icon"><img src="assets/grammar.jpg" alt="image for grammar option"></div>
-      <p>GRAMMAR</p>
+      <p>{{"HOME.OPTIONS.GRAMMAR" | translate}}</p>
     </article>
     <article class="option" routerLink="/memory-game">
       <div class="icon"><img src="assets/memory.png" alt="image for memory game option"></div>
-      <p>MEMORY GAME</p>
+      <p>{{"HOME.OPTIONS.MEMORY-GAME" | translate}}</p>
     </article>
     <article class="option">
       <div class="icon"></div>
-      <p>OTHER</p>
+      <p>{{"HOME.OPTIONS.OTHER" | translate}}</p>
     </article>
   </section>
 

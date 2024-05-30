@@ -8,15 +8,24 @@
   </div>
   <input type="checkbox" id="nav-toggle" class="menu-toggle" style="display:none;"/>
   <ul class="navbar-links">
-    <li><a routerLink="/">HOME</a></li>
+    <li><a routerLink="/">{{'HEADER.HOME' | translate}}</a></li>
     <li class="dropdown">
-      <a routerLink="/learn">LEARN</a>
+      <a routerLink="/learn">{{'HEADER.LEARN' | translate}}</a>
       <ul class="dropdown-content">
-        <li><a routerLink="/grammar">GRAMMAR</a></li>
-        <li><a routerLink="/vocabulary">VOCABULARY</a></li>
+        <li><a routerLink="/grammar">{{'HEADER.GRAMMAR' | translate}}</a></li>
+        <li><a routerLink="/vocabulary">{{'HEADER.VOCABULARY' | translate}}</a></li>
       </ul>
     </li>
-    <li><a routerLink="/practice">PRACTICE</a></li>
-    <li><a routerLink="/profile">PROFILE</a></li>
+    <li><a routerLink="/practice">{{'HEADER.PRACTICE' | translate}}</a></li>
+    <li><a routerLink="/profile">{{'HEADER.PROFILE' | translate}}</a></li>
+    <li class="dropdown">
+      <ul class="dropdown-content">
+        <span (click)="switchLanguage('en')" class="fi fi-gr"></span> <span class="fi fi-gr fis"></span>
+        <li><button >English</button></li>
+        <li><button (click)="switchLanguage('es')">Español</button></li>
+      </ul>
+    </li>
+    
+
   </ul>
 </nav>

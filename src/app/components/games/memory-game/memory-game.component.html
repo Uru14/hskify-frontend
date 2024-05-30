@@ -6,20 +6,20 @@
       
     </div>
     <div class="game-container"></div>
-    <button id="stop" class="hide">Stop Game</button>
+    <button id="stop" class="hide">{{"MEMORY-GAME.STOP" | translate}}</button>
   </div>
   <div class="controls-container">
     <div class="mode-buttons">
-      <button id="hanzi-hanzi" (click)="selectMode2($event)">hanzi-hanzi</button>
-      <button id="hanzi-pinyin" (click)="selectMode2($event)">hanzi-pinyin</button>
-      <button id="hanzi-trans" (click)="selectMode2($event)">hanzi-trans</button>
-      <button id="easy" (click)="selectMode($event)">Easy Game Mode</button>
-      <button id="medium" (click)="selectMode($event)">Medium Game Mode</button>
-      <button id="hard" (click)="selectMode($event)">Hard Game Mode</button>
+      <button id="hanzi-hanzi" (click)="selectMode2($event)">{{"MEMORY-GAME.HAN-HAN" | translate}}</button>
+      <button id="hanzi-pinyin" (click)="selectMode2($event)">{{"MEMORY-GAME.HAN-PIN" | translate}}</button>
+      <button id="hanzi-trans" (click)="selectMode2($event)">{{"MEMORY-GAME.HAN-TRANS" | translate}}</button>
+      <button id="easy" (click)="selectMode($event)">{{"MEMORY-GAME.EASY-MODE" | translate}}</button>
+      <button id="medium" (click)="selectMode($event)">{{"MEMORY-GAME.MEDIUM-MODE" | translate}}</button>
+      <button id="hard" (click)="selectMode($event)">{{"MEMORY-GAME.HARD-MODE" | translate}}</button>
     </div>
     <p id="result"></p>
     <div id="score"></div>
-    <button id="start" [disabled]="!gameMode">Start Game</button>
+    <button id="start" [disabled]="!gameMode">{{"MEMORY-GAME.START" | translate}}</button>
 
   </div>
 </body>

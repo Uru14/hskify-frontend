@@ -2,15 +2,15 @@ import { Component } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import {MatIcon} from "@angular/material/icon";
 import {ApiService, CharacterDetailResponse, CharacterFlashcardResponse} from "../../services/api.service";
-import {error} from "@angular/compiler-cli/src/transformers/util";
 import {NgClass} from "@angular/common";
 import { FlashcardDetailComponent } from '../flashcard-detail/flashcard-detail.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-vocabulary',
   standalone: true,
-  imports: [MatCardModule, MatIcon, NgClass, FlashcardDetailComponent],
+  imports: [MatCardModule, MatIcon, NgClass, FlashcardDetailComponent, TranslateModule],
   templateUrl: './vocabulary.component.html',
   styleUrl: './vocabulary.component.css'
 })

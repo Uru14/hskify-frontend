@@ -1,0 +1,35 @@
+{
+    "HEADER": {
+        "HOME": "HOME",
+        "LEARN": "LEARN",
+        "GRAMMAR": "GRAMMAR",
+        "VOCABULARY": "VOCABULARY",
+        "PRACTICE": "PRACTICE",
+        "PROFILE": "PROFILE"
+    },
+    "HOME": {
+        "WELCOME": "Welcome to HSKify",
+        "WELCOME-MESSAGE": "Your bridge to mastery of Chinese. Each day, a new character awaits you to explore its meaning, pronunciation and usage. Start your journey to fluency and success in HSK with us.",
+        "DAILY-WORD": "WORD OF THE DAY",
+        "OPTIONS": {
+            "VOCABULARY": "VOCABULARY",
+            "GRAMMAR": "GRAMMAR",
+            "MEMORY-GAME": "MEMORY-GAME",
+            "OTHER": "OTHER"
+        }
+    },
+    "VOCABULARY": {
+        "HEADER": "HSK1 VOCABULARY LIST"
+    },
+    "MEMORY-GAME": {
+        "STOP": "Stop Game",
+        "START": "Start Game",
+        "HAN-HAN": "Hanzi-Hanzi",
+        "HAN-PIN": "Hanzi-Pinyin",
+        "HAN-TRANS": "Hanzi-Translation",
+        "EASY-MODE": "Easy",
+        "MEDIUM-MODE": "Medium",
+        "HARD-MODE": "Hard"
+
+    }
+}

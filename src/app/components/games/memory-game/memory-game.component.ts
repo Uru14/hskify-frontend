@@ -1,12 +1,13 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {ApiService, CharacterFlashcardResponse} from "../../../services/api.service";
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
 @Component({
   selector: 'app-memory-game',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './memory-game.component.html',
   styleUrl: './memory-game.component.css',
   encapsulation: ViewEncapsulation.None
