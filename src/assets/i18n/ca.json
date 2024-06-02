@@ -1,35 +1,268 @@
 {
-    "HEADER": {
-        "HOME": "INICI",
-        "LEARN": "APRENDRE",
-        "GRAMMAR": "GRAMÀTICA",
-        "VOCABULARY": "VOCABULARI",
-        "PRACTICE": "PRACTICAR",
-        "PROFILE": "PERFIL",
-        "LANGUAGE": "IDIOMA"
-    },
-    "HOME": {
-        "WELCOME": "Benvingut a HSKify",
-        "WELCOME-MESSAGE": "El teu pont cap al domini del xinès. Cada dia, un nou caràcter et espera per explorar el seu significat, pronunciació i ús. Comença el teu viatge cap a la fluïdesa i èxit en el HSK amb nosaltres.",
-        "DAILY-WORD": "PARAULA DEL DIA",
-        "OPTIONS": {
-            "VOCABULARY": "VOCABULARI",
-            "GRAMMAR": "GRAMÀTICA",
-            "MEMORY-GAME": "JOC DE MEMÒRIA",
-            "OTHER": "ALTRE"
-        }
-    },
-    "VOCABULARY": {
-        "HEADER": "LLISTA DE VOCABULARI HSK1"
-    },
-    "MEMORY-GAME": {
-        "STOP": "Aturar joc",
-        "START": "Començar joc",
-        "HAN-HAN": "Hanzi-Hanzi",
-        "HAN-PIN": "Hanzi-Pinyin",
-        "HAN-TRANS": "Hanzi-Traducció",
-        "EASY-MODE": "Fàcil",
-        "MEDIUM-MODE": "Mitjà",
-        "HARD-MODE": "Difícil"
+  "HEADER": {
+    "HOME": "INICI",
+    "LEARN": "APRENDRE",
+    "GRAMMAR": "GRAMÀTICA",
+    "VOCABULARY": "VOCABULARI",
+    "PRACTICE": "PRACTICAR",
+    "PROFILE": "PERFIL",
+    "LANGUAGE": "IDIOMA"
+  },
+  "HOME": {
+    "WELCOME": "Benvingut a HSKify",
+    "WELCOME-MESSAGE": "El teu pont cap al domini del xinès. Cada dia, un nou caràcter et espera per explorar el seu significat, pronunciació i ús. Comença el teu viatge cap a la fluïdesa i èxit en el HSK amb nosaltres.",
+    "DAILY-WORD": "PARAULA DEL DIA",
+    "OPTIONS": {
+      "VOCABULARY": "VOCABULARI",
+      "GRAMMAR": "GRAMÀTICA",
+      "MEMORY-GAME": "JOC DE MEMÒRIA",
+      "OTHER": "ALTRE"
     }
+  },
+  "VOCABULARY": {
+    "HEADER": "LLISTA DE VOCABULARI HSK1"
+  },
+  "MEMORY-GAME": {
+    "STOP": "Aturar joc",
+    "START": "Començar joc",
+    "HAN-HAN": "Hanzi-Hanzi",
+    "HAN-PIN": "Hanzi-Pinyin",
+    "HAN-TRANS": "Hanzi-Traducció",
+    "EASY-MODE": "Fàcil",
+    "MEDIUM-MODE": "Mitjà",
+    "HARD-MODE": "Difícil"
+  },
+  "GRAMMAR": {
+    "TITLE": "Introducció a la Gramàtica Bàsica del Xinès",
+    "INTRODUCTION": "El xinès mandarí és un idioma fascinant i, tot i que pot semblar complex, té algunes característiques gramaticals que el fan accessible per als principiants. A continuació, explorarem alguns dels elements clau de la gramàtica xinesa, comparant-los amb l'anglès i l'espanyol per a una millor comprensió.",
+    "SVO_TITLE": "1. Estructura de l'Oració: Subjecte-Verb-Objecte (SVO)",
+    "SVO_TEXT": "Al nivell més bàsic, l'estructura de les frases en xinès és sorprenentment similar a la de l'anglès i l'espanyol. Moltes frases bàsiques en xinès segueixen una estructura de Subjecte-Verb-Objecte.",
+    "SVO_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "Català"
+    },
+    "SVO_TABLE_CONTENT": [
+      {
+        "HANZI": "我吃。",
+        "PINYIN": "Wǒ chī.",
+        "TRANSLATION": "Jo menjo."
+      },
+      {
+        "HANZI": "她去。",
+        "PINYIN": "Tā qù.",
+        "TRANSLATION": "Ella va."
+      },
+      {
+        "HANZI": "我去超市。",
+        "PINYIN": "Wǒ qù chāoshì.",
+        "TRANSLATION": "Jo vaig al supermercat."
+      },
+      {
+        "HANZI": "她吃面包。",
+        "PINYIN": "Tā chī miànbāo.",
+        "TRANSLATION": "Ella menja pa."
+      },
+      {
+        "HANZI": "你喜欢猫。",
+        "PINYIN": "Nǐ xǐhuān māo.",
+        "TRANSLATION": "T'agraden els gats."
+      }
+    ],
+    "TIME_PLACE_TITLE": "2. Temps i Lloc",
+    "TIME_PLACE_TEXT": "En xinès, el moment en què va passar, està passant o passarà alguna cosa es col·loca generalment al principi de la frase o immediatament després del subjecte. Les paraules de ubicació en xinès sovint requereixen un ordre de paraules diferent de l'anglès. Típicament, en descriure on va passar alguna cosa, hauràs de construir una frase que comenci amb 在 (zài). Aquesta frase de 在 (zài) hauria de venir després de les paraules de temps (si n'hi ha) i abans del verb.",
+    "HANZI": "Hànzì",
+    "PINYIN": "Pīnyīn",
+    "TRANSLATION": "Català",
+    "TIME_PLACE_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "Català"
+    },
+    "TIME_PLACE_TABLE_CONTENT": [
+      {
+        "HANZI": "昨天他去了超市。",
+        "PINYIN": "Zuótiān tā qùle chāoshì.",
+        "TRANSLATION": "Ahir, ell va al supermercat."
+      },
+      {
+        "HANZI": "他昨天去了超市。",
+        "PINYIN": "Tā zuótiān qùle chāoshì.",
+        "TRANSLATION": "Ell va al supermercat ahir."
+      },
+      {
+        "HANZI": "我在桂林工作。",
+        "PINYIN": "Wǒ zài Guìlín gōngzuò.",
+        "TRANSLATION": "Jo treballo a Guilin."
+      },
+      {
+        "HANZI": "我昨天在家看书。",
+        "PINYIN": "Wǒ zuótiān zàijiā kànshū.",
+        "TRANSLATION": "Ahir vaig llegir llibres a casa."
+      },
+      {
+        "HANZI": "我住在桂林。",
+        "PINYIN": "Wǒ zhù zài Guìlín.",
+        "TRANSLATION": "Jo visc a Guilin."
+      }
+    ],
+    "NO_CONJUGATION_TITLE": "3. Sense Conjugació de Verbs o Temps",
+    "NO_CONJUGATION_TEXT": "Una de les característiques més notables de la gramàtica xinesa és l'absència completa de conjugacions verbals. Els verbs en xinès no canvien la seva forma segons el subjecte o el temps. En lloc dels temps verbals, el xinès utilitza aspectes gramaticals per indicar quan ocorre una acció. Aquests aspectes s'expressen a través de marcadors com 了 (le), 过 (guo), 着 (zhe), 在 (zài) i 正在 (zhèngzài), juntament amb referències específiques a punts o períodes de temps. Aquesta característica simplifica enormement la gramàtica, ja que els verbs sempre romanen iguals i mai necessiten ser conjugats. No haver de aprendre conjugacions verbals com en altres idiomes com l'anglès o els idiomes romànics fa que aprendre xinès sigui més accessible i menys complicat pels principiants. Els marcadors temporals poden ser confusos al principi, però amb pràctica, es tornen més clars. És important aprendre el correcte ús d'aquests marcadors per comunicar amb precisió el moment d'una acció en xinès.",
+    "NO_CONJUGATION_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "Català"
+    },
+    "NO_CONJUGATION_TABLE_CONTENT": [
+      {
+        "HANZI": "我吃面包。",
+        "PINYIN": "Wǒ chī miànbāo.",
+        "TRANSLATION": "Jo menjo pa."
+      },
+      {
+        "HANZI": "你吃面包。",
+        "PINYIN": "Nǐ chī miànbāo.",
+        "TRANSLATION": "Tu menges pa."
+      },
+      {
+        "HANZI": "她吃面包。",
+        "PINYIN": "Tā chī miànbāo.",
+        "TRANSLATION": "Ella menja pa."
+      }
+    ],
+    "PLURAL_SINGULAR_TITLE": "4. Plural i Singular",
+    "PLURAL_SINGULAR_TEXT": "Molts noms en anglès tenen dues formes, singular i plural. Per exemple, pots dir que tens 'un gat', però si en tens dos o més, has d'afegir 's' al final del nom per indicar pluralitat. El xinès no funciona d'aquesta manera. No importa si tens un, dos o dos mil de alguna cosa, el nom que utilitzis per descriure-ho romandrà el mateix. Tingues en compte que la paraula xinesa per 'problema' (问题 o wèntí) no canvia independentment de quantitat. Típicament, si alguna cosa és plural o singular en xinès es pot indicar incloent una paraula numeral per especificar exactament la quantitat d'alguna cosa. Alternativament, pots utilitzar paraules més vagues com 几个 (jǐgè, 'diversos') o 一些 (yīxiē, 'alguns') per indicar que tens diverses unitats de qualsevol cosa que sigui. Tot i això, el nom en si mateix roman inalterat. El xinès té un sufix, 们 (men), que es pot afegir a algunes paraules per indicar pluralitat, però el seu ús està limitat a certs pronoms i paraules que es refereixen a persones. Per exemple, la forma plural de 他 (tā) és 他们 (tāmen). Afegir 们 (men) també funciona si vols referir-te a un grup de col·legues 同事们 (tóngshìmen) en lloc d'un únic col·lega 同事 (tóngshì).",
+    "PLURAL_SINGULAR_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "Català"
+    },
+    "PLURAL_SINGULAR_TABLE_CONTENT": [
+      {
+        "HANZI": "我有一个问题。",
+        "PINYIN": "Wǒ yǒu yīgè wèntí.",
+        "TRANSLATION": "Tinc un problema."
+      },
+      {
+        "HANZI": "我有五个问题。",
+        "PINYIN": "Wǒ yǒu wǔgè wèntí.",
+        "TRANSLATION": "Tinc cinc problemes."
+      },
+      {
+        "HANZI": "我有九十九个问题。",
+        "PINYIN": "Wǒ yǒu jiǔshíjiǔ gè wèntí.",
+        "TRANSLATION": "Tinc 99 problemes."
+      }
+    ],
+    "GENDER_AGREEMENT_TITLE": "5. No Acord de Gènere Entre Substantiu i Adjectiu",
+    "GENDER_AGREEMENT_TEXT": "Similar a l'anglès, els adjectius xinesos no han de coincidir en gènere o nombre amb els substantius que modifiquen. Els parlants d'anglès no han de tractar amb substantius amb gènere, però són comuns en idiomes europeus sovint apresos pels parlants d'anglès, com l'espanyol i el francès. Per exemple, en francès, si un substantiu és femení, el seu adjectiu corresponent també ha de ser femení. Així, la forma masculina de l'adjectiu francès 'gris', que és 'gris', es converteix en 'grise' quan s'utilitza amb un substantiu femení. Els adjectius xinesos no passen per aquests canvis. Per dir que alguna cosa és gris, simplement pots dir que és 灰色 的 (huīsè de). A diferència dels adjectius en molts idiomes europeus, els adjectius xinesos no canvien segons si el substantiu que modifiquen és plural o singular.",
+    "GENDER_AGREEMENT_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "Català"
+    },
+    "GENDER_AGREEMENT_TABLE_CONTENT": [
+      {
+        "HANZI": "这条围巾不漂亮。",
+        "PINYIN": "Zhè tiáo wéijīn bù piàoliang.",
+        "TRANSLATION": "Aquesta bufanda no és bonica."
+      }
+    ],
+    "ASKING_QUESTIONS_TITLE": "6. Fer Preguntes",
+    "ASKING_QUESTIONS_TEXT": "Fer preguntes bàsiques en xinès també és senzill. La manera més fàcil de fer una pregunta és afegir 吗 (ma) al final de la frase. Aquest mètode es pot utilitzar per convertir una afirmació en una pregunta de sí o no. Desafortunadament, l'ordre de les paraules per a les preguntes en xinès difereix de l'ús en anglès, així que potser no podràs utilitzar totes les paraules interrogatives en xinès correctament de seguida. No et preocupis! Formular preguntes no és massa difícil, i dominar l'ús de 吗 (ma) per a preguntes de sí o no és una excel·lent manera de començar.",
+    "ASKING_QUESTIONS_TABLE_HEADER": {
+      "DECLARATION": "Declaració",
+      "QUESTION_YES_NO": "Pregunta (Sí/No)",
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "Català"
+    },
+    "ASKING_QUESTIONS_TABLE_CONTENT": [
+      {
+        "DECLARATION": "你要去超市。",
+        "QUESTION_YES_NO": "你要去超市吗?",
+        "HANZI": "Nǐ yào qù chāoshì.",
+        "PINYIN": "Nǐ yào qù chāoshì ma?",
+        "TRANSLATION": "Vols anar al supermercat?"
+      }
+    ],
+    "POSSESSION_INDICATION_TITLE": "7. Indicació de Possessió",
+    "POSSESSION_INDICATION_TEXT": "Una altra cosa que necessitaràs aprendre ràpidament com a parlant principiant de xinès és com indicar la possessió. En anglès, això es fa típicament afegint un apòstrof 's' al final d'una paraula, com ara, 'Aquest és el gat de Xiao Wang'. En xinès, la possessió s'indica amb 的 (de). Aquesta paraula segueix immediatament la persona o el pronom a qui pertany alguna cosa. La seva posició és essencialment la mateixa que l'apòstrof en anglès. Per tant, 'Aquest és el gat de Xiao Wang' es pot traduir com 这 是 小王的猫 (Zhè shì Xiǎowáng de mao). Si no saps o no vols utilitzar el nom de la persona a qui pertany alguna cosa en anglès, probablement utilitzaràs un pronom possessiu, com 'teu', 'seu' o 'meu'. Si ets parlant natiu d'anglès, és possible que automàticament utilitzis pronoms possessius sense problemes, però la seva irregularitat pot causar maldecaps als parlants que no són d'anglès. Afortunadament, els pronoms possessius xinesos són molt més simples que els seus equivalents en anglès. Tot el que has de fer per formar-los és afegir el caràcter 的 (de) al final dels pronoms xinesos regulars. Utilitzar 的 (de) és el mètode més fàcil i més comú per parlar de possessió en mandarí. Dominar aquest punt gramatical és una manera ràpida i senzilla d'ampliar el rang de coses que pots dir en xinès!",
+    "POSSESSION_INDICATION_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "Català"
+    },
+    "POSSESSION_INDICATION_TABLE_CONTENT": [
+      {
+        "HANZI": "这是我的猫。",
+        "PINYIN": "Zhè shì wǒ de māo.",
+        "TRANSLATION": "Aquest és el meu gat."
+      }
+    ],
+    "NEGATION_TITLE": "8. Negació",
+    "NEGATION_TEXT": "La negació és un altre aspecte important de la gramàtica xinesa bàsica que els principiants han de dominar. El xinès utilitza dos mètodes diferents per expressar la negació. El més comú implica l'ús del caràcter 不 (bù), que es tradueix aproximadament com 'no', 'no' o 'no'. El caràcter 不 (bù) es pot utilitzar en la majoria de situacions. No obstant això, 不 (bù) no es pot utilitzar mai amb el verb 有 (yǒu, 'tenir'). Si la frase que intentes negar conté el verb 有 (yǒu), llavors has d'utilitzar 没 (méi) per negar-lo.",
+    "NEGATION_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "Català"
+    },
+    "NEGATION_TABLE_CONTENT": [
+      {
+        "HANZI": "这条围巾不漂亮。",
+        "PINYIN": "Zhè tiáo wéijīn bù piàoliang.",
+        "TRANSLATION": "Aquesta bufanda no és bonica."
+      },
+      {
+        "HANZI": "我不要去超市。",
+        "PINYIN": "Wǒ bù yào qù chāoshì.",
+        "TRANSLATION": "No vull anar al supermercat."
+      },
+      {
+        "HANZI": "他不吃面包。",
+        "PINYIN": "Tā bù chī miànbāo.",
+        "TRANSLATION": "Ell no menja pa."
+      },
+      {
+        "HANZI": "我没有猫。",
+        "PINYIN": "Wǒ méiyǒu māo.",
+        "TRANSLATION": "No tinc cap gat."
+      },
+      {
+        "HANZI": "他们没有面包。",
+        "PINYIN": "Tāmen méiyǒu miànbāo.",
+        "TRANSLATION": "Ells no tenen pa."
+      }
+    ],
+    "MEASURE_WORDS_TITLE": "9. Paraules de Mesura",
+    "MEASURE_WORDS_TEXT": "Les paraules de mesura són un altre aspecte important de la gramàtica xinesa que tot principiant hauria de conèixer. Com a parlant d'anglès, ja saps com utilitzar paraules de mesura (també anomenades 'classificadors'), que són relativament comunes en anglès. Per exemple, sovint parlem d'un 'parell' de pantalons o d'una 'tallada' de pastís. 'Parell' i 'tallada' són paraules de mesura. Una diferència important entre les paraules de mesura en anglès i xinès és que hi ha moltes més paraules de mesura en xinès. A més, tot substantiu xinès ha d'anar precedit d'una, mentre que en anglès només alguns substantius requereixen una paraula de mesura. Tingues en compte que en els dos exemples anteriors, no cal una paraula de mesura en anglès, però s'ha d'utilitzar una en xinès. Tot i que a vegades és possible endevinar quina paraula de mesura utilitzar segons la forma o el tipus de l'objecte que es modifica, la mala notícia és que són una mica imprevisibles. En algun moment, hauràs de memoritzar quina paraula de mesura va amb quin substantiu. La bona notícia és que hi ha una paraula de mesura general, 个 (gè), que es pot inserir abans de qualsevol substantiu xinès en una pinça. 个 (gè) és la paraula de mesura xinesa més comuna, així que si decides utilitzar-la quan no estiguis segur, probablement tindràs sort i crearàs una frase correcta. No et preocupis. Fins i tot si et confons, la gent encara podrà entendre't.",
+    "MEASURE_WORDS_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "Català"
+    },
+    "MEASURE_WORDS_TABLE_CONTENT": [
+      {
+        "HANZI": "一个人",
+        "PINYIN": "yīgè rén",
+        "TRANSLATION": "una persona"
+      },
+      {
+        "HANZI": "三个苹果",
+        "PINYIN": "sāngè píngguǒ",
+        "TRANSLATION": "tres pomes"
+      },
+      {
+        "HANZI": "四条围巾",
+        "PINYIN": "sì tiáo wéijīn",
+        "TRANSLATION": "quatre bufandes"
+      },
+      {
+        "HANZI": "五杯咖啡",
+        "PINYIN": "wǔ bēi kāfēi",
+        "TRANSLATION": "cinc tasses de cafè"
+      }
+    ]
+  }
 }
+

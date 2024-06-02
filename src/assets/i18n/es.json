@@ -32,5 +32,238 @@
         "MEDIUM-MODE": "Media",
         "HARD-MODE": "Difícil"
 
+    },
+    "GRAMMAR": {
+      "TITLE": "Introducción a la Gramática Básica del Chino",
+      "INTRODUCTION": "El mandarín chino es un idioma fascinante y, aunque puede parecer complejo, tiene algunas características gramaticales que lo hacen accesible para principiantes. A continuación, exploraremos algunos de los elementos clave de la gramática china, comparándolos con el inglés y el español para una mejor comprensión.",
+      "SVO_TITLE": "1. Estructura de la Oración: Sujeto-Verbo-Objeto (SVO)",
+      "SVO_TEXT": "En el nivel más básico, la estructura de las oraciones en chino es sorprendentemente similar a la del inglés y el español. Muchas oraciones básicas en chino siguen una estructura de Sujeto-Verbo-Objeto.",
+      "SVO_TABLE_HEADER": {
+        "HANZI": "Hànzì",
+        "PINYIN": "Pīnyīn",
+        "TRANSLATION": "Español"
+      },
+      "SVO_TABLE_CONTENT": [
+        {
+          "HANZI": "我吃。",
+          "PINYIN": "Wǒ chī.",
+          "TRANSLATION": "Yo como."
+        },
+        {
+          "HANZI": "她去。",
+          "PINYIN": "Tā qù.",
+          "TRANSLATION": "Ella va."
+        },
+        {
+          "HANZI": "我去超市。",
+          "PINYIN": "Wǒ qù chāoshì.",
+          "TRANSLATION": "Yo voy al supermercado."
+        },
+        {
+          "HANZI": "她吃面包。",
+          "PINYIN": "Tā chī miànbāo.",
+          "TRANSLATION": "Ella come pan."
+        },
+        {
+          "HANZI": "你喜欢猫。",
+          "PINYIN": "Nǐ xǐhuān māo.",
+          "TRANSLATION": "Te gustan los gatos."
+        }
+      ],
+      "TIME_PLACE_TITLE": "2. Tiempo y Lugar",
+      "TIME_PLACE_TEXT": "En chino, el momento en que algo ocurrió, está ocurriendo o ocurrirá se coloca generalmente al principio de la oración o inmediatamente después del sujeto. Las palabras de ubicación en chino a menudo requieren un orden de palabras diferente al inglés. Típicamente, al describir dónde ocurrió algo, necesitarás construir una frase que comience con 在 (zài). Esta frase 在 (zài) debe venir después de las palabras de tiempo (si las hay) y antes del verbo. Ten en cuenta que hay algunas excepciones a esta regla, especialmente con ciertos verbos que involucran movimiento direccional o se relacionan con ubicaciones específicas, como 走 (zǒu, 'caminar'), 停 (tíng, 'detener') y 住 (zhù, 'vivir'). Estos verbos pueden tomar complementos de ubicación, que son frases 在 (zài) que vienen después del verbo. Sin embargo, como principiante, es más seguro colocar la ubicación antes del verbo, ya que este es el orden de palabras más común en chino.",
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "Español",
+      "TIME_PLACE_TABLE_HEADER": {
+        "HANZI": "Hànzì",
+        "PINYIN": "Pīnyīn",
+        "TRANSLATION": "Español"
+      },
+      "TIME_PLACE_TABLE_CONTENT": [
+        {
+          "HANZI": "昨天他去了超市。",
+          "PINYIN": "Zuótiān tā qùle chāoshì.",
+          "TRANSLATION": "Ayer, él fue al supermercado."
+        },
+        {
+          "HANZI": "他昨天去了超市。",
+          "PINYIN": "Tā zuótiān qùle chāoshì.",
+          "TRANSLATION": "Él fue al supermercado ayer."
+        },
+        {
+          "HANZI": "我在桂林工作。",
+          "PINYIN": "Wǒ zài Guìlín gōngzuò.",
+          "TRANSLATION": "Yo trabajo en Guilin."
+        },
+        {
+          "HANZI": "我昨天在家看书。",
+          "PINYIN": "Wǒ zuótiān zàijiā kànshū.",
+          "TRANSLATION": "Ayer leí libros en casa."
+        },
+        {
+          "HANZI": "我住在桂林。",
+          "PINYIN": "Wǒ zhù zài Guìlín.",
+          "TRANSLATION": "Yo vivo en Guilin."
+        }
+      ],
+      "NO_CONJUGATION_TITLE": "3. Sin Conjugación Verbal ni Tiempos Verbales",
+      "NO_CONJUGATION_TEXT": "Una de las características más destacadas de la gramática china es la completa ausencia de conjugaciones verbales. Los verbos en chino no cambian su forma según el sujeto o el tiempo. En lugar de los tiempos verbales, el chino usa aspectos gramaticales para indicar cuándo ocurre una acción. Estos aspectos se expresan mediante marcadores como 了 (le), 过 (guo), 着 (zhe), 在 (zài) y 正在 (zhèngzài), junto con referencias específicas a puntos o períodos en el tiempo. Esta característica simplifica en gran medida la gramática, ya que los verbos siempre permanecen iguales y nunca necesitan ser conjugados. No tener que aprender conjugaciones verbales como en otros idiomas como el inglés o los idiomas romances hace que aprender chino sea más accesible y menos complicado para principiantes. Los marcadores de tiempo pueden ser confusos al principio, pero con práctica, se vuelven más claros. Es importante aprender el uso adecuado de estos marcadores para transmitir con precisión el momento de una acción en chino.",
+      "NO_CONJUGATION_TABLE_HEADER": {
+        "HANZI": "Hànzì",
+        "PINYIN": "Pīnyīn",
+        "TRANSLATION": "Español"
+      },
+      "NO_CONJUGATION_TABLE_CONTENT": [
+        {
+          "HANZI": "我吃面包。",
+          "PINYIN": "Wǒ chī miànbāo.",
+          "TRANSLATION": "Yo como pan."
+        },
+        {
+          "HANZI": "你吃面包。",
+          "PINYIN": "Nǐ chī miànbāo.",
+          "TRANSLATION": "Tú comes pan."
+        },
+        {
+          "HANZI": "她吃面包。",
+          "PINYIN": "Tā chī miànbāo.",
+          "TRANSLATION": "Ella come pan."
+        }
+      ],
+      "PLURAL_SINGULAR_TITLE": "4. Plural y Singular",
+      "PLURAL_SINGULAR_TEXT": "Muchos sustantivos en inglés tienen dos formas, singular y plural. Por ejemplo, puedes decir 'un gato,' pero si tienes dos o más, debes agregar 's' al final del sustantivo para indicar pluralidad. El chino no funciona de esta manera. No importa si tienes uno, dos o dos mil de algo, el sustantivo que uses para describirlo permanecerá igual. Ten en cuenta que la palabra china para 'problema' (问题 o wèntí) no cambia independientemente de cuántos problemas tengas. Típicamente, si algo es plural o singular en chino puede indicarse incluyendo una palabra numérica para especificar exactamente la cantidad de algo. Alternativamente, puedes usar palabras más vagas como 几个 (jǐgè, 'varios') o 一些 (yīxiē, 'algunos') para indicar que tienes varias de lo que sea. Independientemente, el sustantivo en sí permanece sin cambios. El chino tiene un sufijo, 们 (men), que se puede agregar a algunas palabras para indicar pluralidad, pero su uso está limitado a ciertos pronombres y palabras que se refieren a personas. Por ejemplo, la forma plural de 他 (tā) es 他们 (tāmen). Agregar 们 (men) también funciona si quieres referirte a un grupo de colegas 同事们 (tóngshìmen) en lugar de un solo colega 同事 (tóngshì).",
+      "PLURAL_SINGULAR_TABLE_HEADER": {
+        "HANZI": "Hànzì",
+        "PINYIN": "Pīnyīn",
+        "TRANSLATION": "Español"
+      },
+      "PLURAL_SINGULAR_TABLE_CONTENT": [
+        {
+          "HANZI": "我有一个问题。",
+          "PINYIN": "Wǒ yǒu yīgè wèntí.",
+          "TRANSLATION": "Tengo un problema."
+        },
+        {
+          "HANZI": "我有五个问题。",
+          "PINYIN": "Wǒ yǒu wǔgè wèntí.",
+          "TRANSLATION": "Tengo cinco problemas."
+        },
+        {
+          "HANZI": "我有九十九个问题。",
+          "PINYIN": "Wǒ yǒu jiǔshíjiǔ gè wèntí.",
+          "TRANSLATION": "Tengo 99 problemas."
+        }
+      ],
+      "GENDER_AGREEMENT_TITLE": "5. No Hay Concordancia de Género Entre Sustantivo y Adjetivo",
+      "GENDER_AGREEMENT_TEXT": "Similar al inglés, los adjetivos chinos no tienen que concordar en género o número con los sustantivos que modifican. Los hablantes de inglés no tienen que lidiar con sustantivos de género, pero son comunes en idiomas europeos que a menudo son aprendidos por hablantes de inglés, como el español y el francés. Por ejemplo, en francés, si un sustantivo es femenino, su adjetivo correspondiente también debe ser femenino. Así, la forma masculina del adjetivo francés 'gris,' que es 'gris,' se convierte en 'grise' cuando se usa con un sustantivo femenino. Los adjetivos chinos no sufren tales cambios. Para decir que algo es gris, simplemente puedes decir que es 灰色 的 (huīsè de). A diferencia de los adjetivos en muchos idiomas europeos, los adjetivos chinos no cambian dependiendo de si el sustantivo que modifican es plural o singular.",
+      "GENDER_AGREEMENT_TABLE_HEADER": {
+        "HANZI": "Hànzì",
+        "PINYIN": "Pīnyīn",
+        "TRANSLATION": "Español"
+      },
+      "GENDER_AGREEMENT_TABLE_CONTENT": [
+        {
+          "HANZI": "这条围巾不漂亮。",
+          "PINYIN": "Zhè tiáo wéijīn bù piàoliang.",
+          "TRANSLATION": "Esta bufanda no es bonita."
+        }
+      ],
+      "ASKING_QUESTIONS_TITLE": "6. Haciendo Preguntas",
+      "ASKING_QUESTIONS_TEXT": "Hacer preguntas básicas en chino también es sencillo. La forma más fácil de hacer una pregunta es agregando 吗 (ma) al final de la oración. Este método se puede utilizar para convertir una afirmación en una pregunta de sí o no. Desafortunadamente, el orden de las palabras para las preguntas en chino difiere del utilizado en inglés, por lo que es posible que no puedas usar todas las palabras interrogativas en chino correctamente de inmediato. ¡No te preocupes! Formular preguntas no es demasiado difícil, y dominar el uso de 吗 (ma) para preguntas de sí o no es una excelente manera de comenzar.",
+      "ASKING_QUESTIONS_TABLE_HEADER": {
+        "DECLARATION": "Declaración",
+        "QUESTION_YES_NO": "Pregunta (Sí/No)",
+        "HANZI": "Hànzì",
+        "PINYIN": "Pīnyīn",
+        "TRANSLATION": "Español"
+      },
+      "ASKING_QUESTIONS_TABLE_CONTENT": [
+        {
+          "DECLARATION": "你要去超市。",
+          "QUESTION_YES_NO": "你要去超市吗?",
+          "HANZI": "Nǐ yào qù chāoshì.",
+          "PINYIN": "Nǐ yào qù chāoshì ma?",
+          "TRANSLATION": "¿Quieres ir al supermercado?"
+        }
+      ],
+      "POSSESSION_INDICATION_TITLE": "7. Indicación de Posesión",
+      "POSSESSION_INDICATION_TEXT": "Otra cosa que deberás aprender rápidamente como hablante principiante de chino es cómo indicar posesión. En inglés, esto se hace típicamente agregando un apóstrofo 's' al final de una palabra, como en 'Este es el gato de Xiao Wang.' En chino, la posesión se indica por 的 (de). Esto sigue inmediatamente al nombre de la persona o pronombre a quien pertenece algo. Su colocación es esencialmente la misma que el apóstrofo en inglés. Por lo tanto, 'Este es el gato de Xiao Wang' se puede traducir como 这 是 小王的猫 (Zhè shì Xiǎowáng de māo). Si no conoces o no quieres usar el nombre de la persona a quien pertenece algo en inglés, es probable que uses un pronombre posesivo, como 'tuyo,' 'de él,' o 'mío.' Si eres un hablante nativo de inglés, es posible que uses automáticamente pronombres posesivos sin problemas, pero su irregularidad puede causar dolores de cabeza a los que no son hablantes de inglés. Afortunadamente, los pronombres posesivos en chino son mucho más simples que sus contrapartes en inglés. Todo lo que necesitas hacer para formarlos es agregar el carácter 的 (de) al final de los pronombres chinos regulares. Usar 的 (de) es el método más fácil y comúnmente utilizado para hablar de posesión en mandarín. Dominar este punto gramatical es una forma rápida y sencilla de ampliar el rango de cosas que puedes decir en chino!",
+      "POSSESSION_INDICATION_TABLE_HEADER": {
+        "HANZI": "Hànzì",
+        "PINYIN": "Pīnyīn",
+        "TRANSLATION": "Español"
+      },
+      "POSSESSION_INDICATION_TABLE_CONTENT": [
+        {
+          "HANZI": "这是我的猫。",
+          "PINYIN": "Zhè shì wǒ de māo.",
+          "TRANSLATION": "Este es mi gato."
+        }
+      ],
+      "NEGATION_TITLE": "8. Negación",
+      "NEGATION_TEXT": "La negación es otro aspecto importante de la gramática básica del chino que los principiantes necesitan dominar. El chino utiliza dos métodos diferentes para expresar negación. El más común implica el uso del carácter 不 (bù), que se traduce aproximadamente como 'no,' 'no hacer,' o 'no hace.' El carácter 不 (bù) se puede usar en la mayoría de las situaciones. Sin embargo, 不 (bù) nunca se puede usar con el verbo 有 (yǒu, 'tener'). Si la oración que estás tratando de negar contiene el verbo 有 (yǒu), entonces debes usar 没 (méi) para negarlo.",
+      "NEGATION_TABLE_HEADER": {
+        "HANZI": "Hànzì",
+        "PINYIN": "Pīnyīn",
+        "TRANSLATION": "Español"
+      },
+      "NEGATION_TABLE_CONTENT": [
+        {
+          "HANZI": "这条围巾不漂亮。",
+          "PINYIN": "Zhè tiáo wéijīn bù piàoliang.",
+          "TRANSLATION": "Esta bufanda no es bonita."
+        },
+        {
+          "HANZI": "我不要去超市。",
+          "PINYIN": "Wǒ bù yào qù chāoshì.",
+          "TRANSLATION": "No quiero ir al supermercado."
+        },
+        {
+          "HANZI": "他不吃面包。",
+          "PINYIN": "Tā bù chī miànbāo.",
+          "TRANSLATION": "Él no come pan."
+        },
+        {
+          "HANZI": "我没有猫。",
+          "PINYIN": "Wǒ méiyǒu māo.",
+          "TRANSLATION": "No tengo ningún gato."
+        },
+        {
+          "HANZI": "他们没有面包。",
+          "PINYIN": "Tāmen méiyǒu miànbāo.",
+          "TRANSLATION": "No tienen ningún pan."
+        }
+      ],
+      "MEASURE_WORDS_TITLE": "9. Palabras de Medida",
+      "MEASURE_WORDS_TEXT": "Las palabras de medida son otro aspecto importante de la gramática china que todo principiante debe conocer. Como hablante de inglés, ya sabes cómo usar palabras de medida (también llamadas 'clasificadores'), que son relativamente comunes en inglés. Por ejemplo, a menudo hablamos de un 'par' de pantalones o una 'rebanada' de pastel. 'Par' y 'rebanada' son palabras de medida. Una diferencia importante entre las palabras de medida en inglés y chino es que hay muchas más palabras de medida en chino. Además, cada sustantivo chino debe ir precedido por una, mientras que en inglés, solo algunos sustantivos requieren una palabra de medida. Ten en cuenta que en los dos ejemplos anteriores, no se necesita una palabra de medida en inglés, pero se debe usar una en chino. Aunque a veces es posible adivinar qué palabra de medida usar según la forma o el tipo del objeto que se está modificando, la mala noticia es que son un poco impredecibles. En algún momento, tendrás que memorizar qué palabra de medida va con qué sustantivo. La buena noticia es que hay una palabra de medida general, 个 (gè), que se puede insertar antes de cualquier sustantivo chino en caso de apuro. 个 (gè) es la palabra de medida china más común, por lo que si eliges usarla cuando no estás seguro, es probable que tengas suerte y crees una oración correcta. No te preocupes. Incluso si te equivocas, la gente seguirá siendo capaz de entenderte.",
+      "MEASURE_WORDS_TABLE_HEADER": {
+        "HANZI": "Hànzì",
+        "PINYIN": "Pīnyīn",
+        "TRANSLATION": "Español"
+      },
+      "MEASURE_WORDS_TABLE_CONTENT": [
+        {
+          "HANZI": "一个人",
+          "PINYIN": "yīgè rén",
+          "TRANSLATION": "una persona"
+        },
+        {
+          "HANZI": "三个苹果",
+          "PINYIN": "sāngè píngguǒ",
+          "TRANSLATION": "tres manzanas"
+        },
+        {
+          "HANZI": "四条围巾",
+          "PINYIN": "sì tiáo wéijīn",
+          "TRANSLATION": "cuatro bufandas"
+        },
+        {
+          "HANZI": "五杯咖啡",
+          "PINYIN": "wǔ bēi kāfēi",
+          "TRANSLATION": "cinco tazas de café"
+        }
+      ]
     }
 }
+

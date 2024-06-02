@@ -1,0 +1,91 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.home-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.intro-text p {
+  margin: 5px 0;
+}
+
+.word-of-the-day {
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.option {
+  text-align: center;
+  flex-basis: 22%;
+}
+
+.option img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.grammar-container {
+  margin-top: 50px;
+}
+
+/* Estilos de la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para la sección de gramática */
+.grammar-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.grammar-container h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

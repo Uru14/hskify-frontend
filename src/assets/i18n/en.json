@@ -1,36 +1,267 @@
 {
-    "HEADER": {
-        "HOME": "HOME",
-        "LEARN": "LEARN",
-        "GRAMMAR": "GRAMMAR",
-        "VOCABULARY": "VOCABULARY",
-        "PRACTICE": "PRACTICE",
-        "PROFILE": "PROFILE",
-        "LANGUAGE": "LANGUAGE"
-    },
-    "HOME": {
-        "WELCOME": "Welcome to HSKify",
-        "WELCOME-MESSAGE": "Your bridge to mastery of Chinese. Each day, a new character awaits you to explore its meaning, pronunciation and usage. Start your journey to fluency and success in HSK with us.",
-        "DAILY-WORD": "WORD OF THE DAY",
-        "OPTIONS": {
-            "VOCABULARY": "VOCABULARY",
-            "GRAMMAR": "GRAMMAR",
-            "MEMORY-GAME": "MEMORY-GAME",
-            "OTHER": "OTHER"
-        }
-    },
-    "VOCABULARY": {
-        "HEADER": "HSK1 VOCABULARY LIST"
-    },
-    "MEMORY-GAME": {
-        "STOP": "Stop Game",
-        "START": "Start Game",
-        "HAN-HAN": "Hanzi-Hanzi",
-        "HAN-PIN": "Hanzi-Pinyin",
-        "HAN-TRANS": "Hanzi-Translation",
-        "EASY-MODE": "Easy",
-        "MEDIUM-MODE": "Medium",
-        "HARD-MODE": "Hard"
-
+  "HEADER": {
+    "HOME": "HOME",
+    "LEARN": "LEARN",
+    "GRAMMAR": "GRAMMAR",
+    "VOCABULARY": "VOCABULARY",
+    "PRACTICE": "PRACTICE",
+    "PROFILE": "PROFILE",
+    "LANGUAGE": "LANGUAGE"
+  },
+  "HOME": {
+    "WELCOME": "Welcome to HSKify",
+    "WELCOME-MESSAGE": "Your bridge to mastery of Chinese. Each day, a new character awaits you to explore its meaning, pronunciation and usage. Start your journey to fluency and success in HSK with us.",
+    "DAILY-WORD": "WORD OF THE DAY",
+    "OPTIONS": {
+      "VOCABULARY": "VOCABULARY",
+      "GRAMMAR": "GRAMMAR",
+      "MEMORY-GAME": "MEMORY-GAME",
+      "OTHER": "OTHER"
     }
+  },
+  "VOCABULARY": {
+    "HEADER": "HSK1 VOCABULARY LIST"
+  },
+  "MEMORY-GAME": {
+    "STOP": "Stop Game",
+    "START": "Start Game",
+    "HAN-HAN": "Hanzi-Hanzi",
+    "HAN-PIN": "Hanzi-Pinyin",
+    "HAN-TRANS": "Hanzi-Translation",
+    "EASY-MODE": "Easy",
+    "MEDIUM-MODE": "Medium",
+    "HARD-MODE": "Hard"
+  },
+  "GRAMMAR": {
+    "TITLE": "Introduction to Basic Chinese Grammar",
+    "INTRODUCTION": "Chinese Mandarin is a fascinating language and, although it may seem complex, it has some grammatical features that make it accessible for beginners. Below, we will explore some of the key elements of Chinese grammar, comparing them with English and Spanish for better understanding.",
+    "SVO_TITLE": "1. Sentence Structure: Subject-Verb-Object (SVO)",
+    "SVO_TEXT": "At the most basic level, the structure of sentences in Chinese is surprisingly similar to that of English and Spanish. Many basic sentences in Chinese follow a Subject-Verb-Object structure.",
+    "SVO_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "English"
+    },
+    "SVO_TABLE_CONTENT": [
+      {
+        "HANZI": "我吃。",
+        "PINYIN": "Wǒ chī.",
+        "TRANSLATION": "I eat."
+      },
+      {
+        "HANZI": "她去。",
+        "PINYIN": "Tā qù.",
+        "TRANSLATION": "She goes."
+      },
+      {
+        "HANZI": "我去超市。",
+        "PINYIN": "Wǒ qù chāoshì.",
+        "TRANSLATION": "I go to the supermarket."
+      },
+      {
+        "HANZI": "她吃面包。",
+        "PINYIN": "Tā chī miànbāo.",
+        "TRANSLATION": "She eats bread."
+      },
+      {
+        "HANZI": "你喜欢猫。",
+        "PINYIN": "Nǐ xǐhuān māo.",
+        "TRANSLATION": "You like cats."
+      }
+    ],
+    "TIME_PLACE_TITLE": "2. Time and Place",
+    "TIME_PLACE_TEXT": "In Chinese, the moment when something happened, is happening, or will happen is generally placed at the beginning of the sentence or immediately after the subject. Location words in Chinese often require a different word order than English. Typically, when describing where something happened, you will need to construct a phrase that begins with 在 (zài). This 在 (zài) phrase should come after time words (if any) and before the verb. Note that there are some exceptions to this rule, especially with certain verbs that involve directional movement or relate to specific locations, such as 走 (zǒu, 'walk'), 停 (tíng, 'stop'), and 住 (zhù, 'live'). These verbs are allowed to take location complements, which are 在 (zài) phrases that come after the verb. However, as a beginner, it is safer to place the location before the verb, as this is the most common word order in Chinese.",
+    "HANZI": "Hànzì",
+    "PINYIN": "Pīnyīn",
+    "TRANSLATION": "English",
+    "TIME_PLACE_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "English"
+    },
+    "TIME_PLACE_TABLE_CONTENT": [
+      {
+        "HANZI": "昨天他去了超市。",
+        "PINYIN": "Zuótiān tā qùle chāoshì.",
+        "TRANSLATION": "Yesterday, he went to the supermarket."
+      },
+      {
+        "HANZI": "他昨天去了超市。",
+        "PINYIN": "Tā zuótiān qùle chāoshì.",
+        "TRANSLATION": "He went to the supermarket yesterday."
+      },
+      {
+        "HANZI": "我在桂林工作。",
+        "PINYIN": "Wǒ zài Guìlín gōngzuò.",
+        "TRANSLATION": "I work in Guilin."
+      },
+      {
+        "HANZI": "我昨天在家看书。",
+        "PINYIN": "Wǒ zuótiān zàijiā kànshū.",
+        "TRANSLATION": "I read books at home yesterday."
+      },
+      {
+        "HANZI": "我住在桂林。",
+        "PINYIN": "Wǒ zhù zài Guìlín.",
+        "TRANSLATION": "I live in Guilin."
+      }
+    ],
+    "NO_CONJUGATION_TITLE": "3. No Verb Conjugation or Tenses",
+    "NO_CONJUGATION_TEXT": "One of the most notable features of Chinese grammar is the complete absence of verb conjugations. Verbs in Chinese do not change their form according to the subject or tense. Instead of verb tenses, Chinese uses grammatical aspects to indicate when an action occurs. These aspects are expressed through markers such as 了 (le), 过 (guo), 着 (zhe), 在 (zài), and 正在 (zhèngzài), along with specific references to points or periods in time. This feature greatly simplifies grammar, as verbs always remain the same and never need to be conjugated. Not having to learn verb conjugations as in other languages like English or Romance languages makes learning Chinese more accessible and less complicated for beginners. Time markers may be confusing at first, but with practice, they become clearer. It is important to learn the proper use of these markers to accurately convey the timing of an action in Chinese.",
+    "NO_CONJUGATION_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "English"
+    },
+    "NO_CONJUGATION_TABLE_CONTENT": [
+      {
+        "HANZI": "我吃面包。",
+        "PINYIN": "Wǒ chī miànbāo.",
+        "TRANSLATION": "I eat bread."
+      },
+      {
+        "HANZI": "你吃面包。",
+        "PINYIN": "Nǐ chī miànbāo.",
+        "TRANSLATION": "You eat bread."
+      },
+      {
+        "HANZI": "她吃面包。",
+        "PINYIN": "Tā chī miànbāo.",
+        "TRANSLATION": "She eats bread."
+      }
+    ],
+    "PLURAL_SINGULAR_TITLE": "4. Plural and Singular",
+    "PLURAL_SINGULAR_TEXT": "Many nouns in English have two forms, singular and plural. For example, you can say you have 'a cat,' but if you have two or more, you must add 's' to the end of the noun to indicate plurality. Chinese does not work this way. No matter if you have one, two, or two thousand of something, the noun you use to describe it will remain the same. Note that the Chinese word for 'problem' (问题 or wèntí) does not change regardless of how many problems you have. Typically, whether something is plural or singular in Chinese can be indicated by including a numeral word to specify exactly the quantity of something. Alternatively, you can use vaguer words like 几个 (jǐgè, 'several') or 一些 (yīxiē, 'some') to indicate you have various of whatever it is. Regardless, the noun itself remains unchanged. Chinese has a suffix, 们 (men), that can be added to some words to indicate plurality, but its use is limited to certain pronouns and words referring to people. For example, the plural form of 他 (tā) is 他们 (tāmen). Adding 们 (men) also works if you want to refer to a group of colleagues 同事们 (tóngshìmen) instead of a single colleague 同事 (tóngshì).",
+    "PLURAL_SINGULAR_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "English"
+    },
+    "PLURAL_SINGULAR_TABLE_CONTENT": [
+      {
+        "HANZI": "我有一个问题。",
+        "PINYIN": "Wǒ yǒu yīgè wèntí.",
+        "TRANSLATION": "I have a problem."
+      },
+      {
+        "HANZI": "我有五个问题。",
+        "PINYIN": "Wǒ yǒu wǔgè wèntí.",
+        "TRANSLATION": "I have five problems."
+      },
+      {
+        "HANZI": "我有九十九个问题。",
+        "PINYIN": "Wǒ yǒu jiǔshíjiǔ gè wèntí.",
+        "TRANSLATION": "I have 99 problems."
+      }
+    ],
+    "GENDER_AGREEMENT_TITLE": "5. No Gender Agreement Between Noun and Adjective",
+    "GENDER_AGREEMENT_TEXT": "Similar to English, Chinese adjectives do not have to agree in gender or number with the nouns they modify. English speakers do not have to deal with gendered nouns, but they are common in European languages often learned by English speakers, such as Spanish and French. For example, in French, if a noun is feminine, its corresponding adjective must also be feminine. Thus, the masculine form of the French adjective 'gray,' which is 'gris,' becomes 'grise' when used with a feminine noun. Chinese adjectives do not undergo such changes. To say something is gray, you can simply say it is 灰色 的 (huīsè de). Unlike adjectives in many European languages, Chinese adjectives do not change depending on whether the noun they modify is plural or singular.",
+    "GENDER_AGREEMENT_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "English"
+    },
+    "GENDER_AGREEMENT_TABLE_CONTENT": [
+      {
+        "HANZI": "这条围巾不漂亮。",
+        "PINYIN": "Zhè tiáo wéijīn bù piàoliang.",
+        "TRANSLATION": "This scarf is not beautiful."
+      }
+    ],
+    "ASKING_QUESTIONS_TITLE": "6. Asking Questions",
+    "ASKING_QUESTIONS_TEXT": "Making basic inquiries in Chinese is also straightforward. The easiest way to ask a question is by adding 吗 (ma) to the end of the sentence. This method can be used to turn a statement into a yes/no question. Unfortunately, word order for questions in Chinese differs from that used in English, so you may not be able to use all the question words in Chinese correctly right away. Don't worry! Formulating questions isn't too difficult, and mastering the use of 吗 (ma) for yes/no questions is an excellent way to start.",
+    "ASKING_QUESTIONS_TABLE_HEADER": {
+      "DECLARATION": "Declaration",
+      "QUESTION_YES_NO": "Question (Yes/No)",
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "English"
+    },
+    "ASKING_QUESTIONS_TABLE_CONTENT": [
+      {
+        "DECLARATION": "你要去超市。",
+        "QUESTION_YES_NO": "你要去超市吗?",
+        "HANZI": "Nǐ yào qù chāoshì.",
+        "PINYIN": "Nǐ yào qù chāoshì ma?",
+        "TRANSLATION": "Do you want to go to the supermarket?"
+      }
+    ],
+    "POSSESSION_INDICATION_TITLE": "7. Indication of Possession",
+    "POSSESSION_INDICATION_TEXT": "Another thing you'll need to quickly learn as a beginner Chinese speaker is how to indicate possession. In English, this is typically done by adding an apostrophe 's' to the end of a word, as in, 'This is Xiao Wang's cat.' In Chinese, possession is indicated by 的 (de). This immediately follows the person or pronoun to whom something belongs. Its placement is essentially the same as the apostrophe in English. Therefore, 'This is Xiao Wang's cat' can be translated as 这 是 小王的猫 (Zhè shì Xiǎowáng de mao). If you don't know or don't want to use the name of the person to whom something belongs in English, you'll likely use a possessive pronoun, such as 'yours,' 'his,' or 'mine.' If you're a native English speaker, you may automatically use possessive pronouns without issue, but their irregularity can cause headaches for non-English speakers. Fortunately, Chinese possessive pronouns are much simpler than their counterparts in English. All you need to do to form them is add the character 的 (de) to the end of regular Chinese pronouns. Using 的 (de) is the easiest and most commonly used method for talking about possession in Mandarin. Mastering this grammatical point is a quick and straightforward way to expand the range of things you can say in Chinese!",
+    "POSSESSION_INDICATION_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "English"
+    },
+    "POSSESSION_INDICATION_TABLE_CONTENT": [
+      {
+        "HANZI": "这是我的猫。",
+        "PINYIN": "Zhè shì wǒ de māo.",
+        "TRANSLATION": "This is my cat."
+      }
+    ],
+    "NEGATION_TITLE": "8. Negation",
+    "NEGATION_TEXT": "Negation is another important aspect of basic Chinese grammar that beginners need to master. Chinese uses two different methods to express negation. The most common involves the use of the character 不 (bù), which roughly translates to 'not,' 'do not,' or 'does not.' The character 不 (bù) can be used in most situations. However, 不 (bù) cannot ever be used with the verb 有 (yǒu, 'to have'). If the sentence you're trying to negate contains the verb 有 (yǒu), then you must use 没 (méi) to negate it.",
+    "NEGATION_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "English"
+    },
+    "NEGATION_TABLE_CONTENT": [
+      {
+        "HANZI": "这条围巾不漂亮。",
+        "PINYIN": "Zhè tiáo wéijīn bù piàoliang.",
+        "TRANSLATION": "This scarf is not beautiful."
+      },
+      {
+        "HANZI": "我不要去超市。",
+        "PINYIN": "Wǒ bù yào qù chāoshì.",
+        "TRANSLATION": "I do not want to go to the supermarket."
+      },
+      {
+        "HANZI": "他不吃面包。",
+        "PINYIN": "Tā bù chī miànbāo.",
+        "TRANSLATION": "He does not eat bread."
+      },
+      {
+        "HANZI": "我没有猫。",
+        "PINYIN": "Wǒ méiyǒu māo.",
+        "TRANSLATION": "I do not have any cats."
+      },
+      {
+        "HANZI": "他们没有面包。",
+        "PINYIN": "Tāmen méiyǒu miànbāo.",
+        "TRANSLATION": "They do not have any bread."
+      }
+    ],
+    "MEASURE_WORDS_TITLE": "9. Measure Words",
+    "MEASURE_WORDS_TEXT": "Measure words are another important aspect of Chinese grammar that every beginner should know. As an English speaker, you already know how to use measure words (also called 'classifiers'), which are relatively common in English. For example, we often talk about a 'pair' of pants or a 'slice' of cake. 'Pair' and 'slice' are measure words. An important difference between measure words in English and Chinese is that there are many more measure words in Chinese. Additionally, every Chinese noun must be preceded by one, whereas in English, only some nouns require a measure word. Note that in the two examples above, a measure word is not needed in English, but one must be used in Chinese. Although sometimes it's possible to guess which measure word to use based on the shape or type of the object being modified, the bad news is that they are a bit unpredictable. At some point, you'll need to memorize which measure word goes with which noun. The good news is that there's a general measure word, 个 (gè), that can be inserted before any Chinese noun in a pinch. 个 (gè) is the most common Chinese measure word, so if you choose to use it when you're unsure, you're likely to get lucky and create a correct sentence. Don't worry. Even if you get it wrong, people will still be able to understand you.",
+    "MEASURE_WORDS_TABLE_HEADER": {
+      "HANZI": "Hànzì",
+      "PINYIN": "Pīnyīn",
+      "TRANSLATION": "English"
+    },
+    "MEASURE_WORDS_TABLE_CONTENT": [
+      {
+        "HANZI": "一个人",
+        "PINYIN": "yīgè rén",
+        "TRANSLATION": "a person"
+      },
+      {
+        "HANZI": "三个苹果",
+        "PINYIN": "sāngè píngguǒ",
+        "TRANSLATION": "three apples"
+      },
+      {
+        "HANZI": "四条围巾",
+        "PINYIN": "sì tiáo wéijīn",
+        "TRANSLATION": "four scarves"
+      },
+      {
+        "HANZI": "五杯咖啡",
+        "PINYIN": "wǔ bēi kāfēi",
+        "TRANSLATION": "five cups of coffee"
+      }
+    ]
+  }
 }

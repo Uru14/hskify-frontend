@@ -1,1 +1,220 @@
-<p>grammar works!</p>
+<body>
+<section class="grammar-container">
+  <h1>{{"GRAMMAR.TITLE" | translate}}</h1>
+  <p>{{"GRAMMAR.INTRODUCTION" | translate}}</p>
+
+  <section>
+    <h2>{{"GRAMMAR.SVO_TITLE" | translate}}</h2>
+    <p>{{"GRAMMAR.SVO_TEXT" | translate}}</p>
+    <table>
+      <thead>
+      <tr>
+        <th>{{"GRAMMAR.SVO_TABLE_HEADER.HANZI" | translate}}</th>
+        <th>{{"GRAMMAR.SVO_TABLE_HEADER.PINYIN" | translate}}</th>
+        <th>{{"GRAMMAR.SVO_TABLE_HEADER.TRANSLATION" | translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (row of ('GRAMMAR.SVO_TABLE_CONTENT' | translate); track row) {
+          <tr >
+            <td>{{row.HANZI}}</td>
+            <td>{{row.PINYIN}}</td>
+            <td>{{row.TRANSLATION}}</td>
+          </tr>
+        }
+
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>{{"GRAMMAR.TIME_PLACE_TITLE" | translate}}</h2>
+    <p>{{"GRAMMAR.TIME_PLACE_TEXT" | translate}}</p>
+    <table>
+      <thead>
+      <tr>
+        <th>{{"GRAMMAR.TIME_PLACE_TABLE_HEADER.HANZI" | translate}}</th>
+        <th>{{"GRAMMAR.TIME_PLACE_TABLE_HEADER.PINYIN" | translate}}</th>
+        <th>{{"GRAMMAR.TIME_PLACE_TABLE_HEADER.TRANSLATION" | translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (row of ('GRAMMAR.TIME_PLACE_TABLE_CONTENT' | translate); track row) {
+          <tr >
+            <td>{{row.HANZI}}</td>
+            <td>{{row.PINYIN}}</td>
+            <td>{{row.TRANSLATION}}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>{{"GRAMMAR.NO_CONJUGATION_TITLE" | translate}}</h2>
+    <p>{{"GRAMMAR.NO_CONJUGATION_TEXT" | translate}}</p>
+    <table>
+      <thead>
+      <tr>
+        <th>{{"GRAMMAR.NO_CONJUGATION_TABLE_HEADER.HANZI" | translate}}</th>
+        <th>{{"GRAMMAR.NO_CONJUGATION_TABLE_HEADER.PINYIN" | translate}}</th>
+        <th>{{"GRAMMAR.NO_CONJUGATION_TABLE_HEADER.TRANSLATION" | translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (row of ('GRAMMAR.NO_CONJUGATION_TABLE_CONTENT' | translate); track row) {
+          <tr >
+            <td>{{row.HANZI}}</td>
+            <td>{{row.PINYIN}}</td>
+            <td>{{row.TRANSLATION}}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>{{"GRAMMAR.PLURAL_SINGULAR_TITLE" | translate}}</h2>
+    <p>{{"GRAMMAR.PLURAL_SINGULAR_TEXT" | translate}}</p>
+    <table>
+      <thead>
+      <tr>
+        <th>{{"GRAMMAR.PLURAL_SINGULAR_TABLE_HEADER.HANZI" | translate}}</th>
+        <th>{{"GRAMMAR.PLURAL_SINGULAR_TABLE_HEADER.PINYIN" | translate}}</th>
+        <th>{{"GRAMMAR.PLURAL_SINGULAR_TABLE_HEADER.TRANSLATION" | translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (row of ('GRAMMAR.PLURAL_SINGULAR_TABLE_CONTENT' | translate); track row) {
+          <tr>
+            <td>{{row.HANZI}}</td>
+            <td>{{row.PINYIN}}</td>
+            <td>{{row.TRANSLATION}}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>{{"GRAMMAR.GENDER_AGREEMENT_TITLE" | translate}}</h2>
+    <p>{{"GRAMMAR.GENDER_AGREEMENT_TEXT" | translate}}</p>
+    <table>
+      <thead>
+      <tr>
+        <th>{{"GRAMMAR.GENDER_AGREEMENT_TABLE_HEADER.HANZI" | translate}}</th>
+        <th>{{"GRAMMAR.GENDER_AGREEMENT_TABLE_HEADER.PINYIN" | translate}}</th>
+        <th>{{"GRAMMAR.GENDER_AGREEMENT_TABLE_HEADER.TRANSLATION" | translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (row of ('GRAMMAR.GENDER_AGREEMENT_TABLE_CONTENT' | translate); track row) {
+          <tr>
+            <td>{{row.HANZI}}</td>
+            <td>{{row.PINYIN}}</td>
+            <td>{{row.TRANSLATION}}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>{{"GRAMMAR.ASKING_QUESTIONS_TITLE" | translate}}</h2>
+    <p>{{"GRAMMAR.ASKING_QUESTIONS_TEXT" | translate}}</p>
+    <table>
+      <thead>
+      <tr>
+        <th>{{"GRAMMAR.ASKING_QUESTIONS_TABLE_HEADER.DECLARATION" | translate}}</th>
+        <th>{{"GRAMMAR.ASKING_QUESTIONS_TABLE_HEADER.QUESTION_YES_NO" | translate}}</th>
+        <th>{{"GRAMMAR.ASKING_QUESTIONS_TABLE_HEADER.HANZI" | translate}}</th>
+        <th>{{"GRAMMAR.ASKING_QUESTIONS_TABLE_HEADER.PINYIN" | translate}}</th>
+        <th>{{"GRAMMAR.ASKING_QUESTIONS_TABLE_HEADER.TRANSLATION" | translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (row of ('GRAMMAR.ASKING_QUESTIONS_TABLE_CONTENT' | translate); track row) {
+          <tr>
+            <td>{{row.DECLARATION}}</td>
+            <td>{{row.QUESTION_YES_NO}}</td>
+            <td>{{row.HANZI}}</td>
+            <td>{{row.PINYIN}}</td>
+            <td>{{row.TRANSLATION}}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>{{"GRAMMAR.POSSESSION_INDICATION_TITLE" | translate}}</h2>
+    <p>{{"GRAMMAR.POSSESSION_INDICATION_TEXT" | translate}}</p>
+    <table>
+      <thead>
+      <tr>
+        <th>{{"GRAMMAR.POSSESSION_INDICATION_TABLE_HEADER.HANZI" | translate}}</th>
+        <th>{{"GRAMMAR.POSSESSION_INDICATION_TABLE_HEADER.PINYIN" | translate}}</th>
+        <th>{{"GRAMMAR.POSSESSION_INDICATION_TABLE_HEADER.TRANSLATION" | translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (row of ('GRAMMAR.POSSESSION_INDICATION_TABLE_CONTENT' | translate); track row) {
+          <tr>
+            <td>{{row.HANZI}}</td>
+            <td>{{row.PINYIN}}</td>
+            <td>{{row.TRANSLATION}}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>{{"GRAMMAR.NEGATION_TITLE" | translate}}</h2>
+    <p>{{"GRAMMAR.NEGATION_TEXT" | translate}}</p>
+    <table>
+      <thead>
+      <tr>
+        <th>{{"GRAMMAR.NEGATION_TABLE_HEADER.HANZI" | translate}}</th>
+        <th>{{"GRAMMAR.NEGATION_TABLE_HEADER.PINYIN" | translate}}</th>
+        <th>{{"GRAMMAR.NEGATION_TABLE_HEADER.TRANSLATION" | translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (row of ('GRAMMAR.NEGATION_TABLE_CONTENT' | translate); track row) {
+          <tr>
+            <td>{{row.HANZI}}</td>
+            <td>{{row.PINYIN}}</td>
+            <td>{{row.TRANSLATION}}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>{{"GRAMMAR.MEASURE_WORDS_TITLE" | translate}}</h2>
+    <p>{{"GRAMMAR.MEASURE_WORDS_TEXT" | translate}}</p>
+    <table>
+      <thead>
+      <tr>
+        <th>{{"GRAMMAR.MEASURE_WORDS_TABLE_HEADER.HANZI" | translate}}</th>
+        <th>{{"GRAMMAR.MEASURE_WORDS_TABLE_HEADER.PINYIN" | translate}}</th>
+        <th>{{"GRAMMAR.MEASURE_WORDS_TABLE_HEADER.TRANSLATION" | translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (row of ('GRAMMAR.MEASURE_WORDS_TABLE_CONTENT' | translate); track row) {
+          <tr>
+            <td>{{row.HANZI}}</td>
+            <td>{{row.PINYIN}}</td>
+            <td>{{row.TRANSLATION}}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>
+
+</section>
+
+</body>
