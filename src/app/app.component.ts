@@ -18,20 +18,5 @@ export class AppComponent {
     this.translate.setDefaultLang('en');
   }
 
-  ngOnInit() {
-    const token = this.apiService.getToken();
-    if (token) {
-      this.apiService.getUserLogged().subscribe({
-        next: (response) => {
-          console.log('User is logged in:', response);
-        },
-        error: (error) => {
-          console.error('User is not logged in', error);
-          this.router.navigate(['/login']);
-        }
-      });
-    } else {
-      this.router.navigate(['/login']);
-    }
-  }
+  
 }

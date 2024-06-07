@@ -59,7 +59,7 @@ export class ApiService {
 
   setToken(token: string) {
     // expires: 2 ==> 2 días. Es buena práctica poner un path, por defecto se recomienda '/'
-    this.cookies.set("token", token, { expires: 2, path: '/'});
+    this.cookies.set("token", token, { expires: 30, path: '/'});
   }
   getToken() {
     return this.cookies.get("token");
