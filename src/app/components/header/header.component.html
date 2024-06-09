@@ -16,13 +16,13 @@
         <li><a routerLink="/vocabulary">{{'HEADER.VOCABULARY' | translate}}</a></li>
       </ul>
     </li>
-    <li><a routerLink="/practice">{{'HEADER.PRACTICE' | translate}}</a></li>
+    <li><a routerLink="/memory-game">{{'HEADER.PRACTICE' | translate}}</a></li>
     <li><a routerLink="/profile">{{'HEADER.PROFILE' | translate}}</a></li>
     <li class="dropdown">
-      <a href="#" class="dropbtn">{{'HEADER.LANGUAGE' | translate}}</a>
+      <a class="dropbtn">{{'HEADER.LANGUAGE' | translate}}</a>
       <ul class="dropdown-content">
         <li (click)="switchLanguage('en')">
-          <img src="assets/flags/en.png" alt="English"> 
+          <img src="assets/flags/en.png" alt="English">
         </li>
         <li (click)="switchLanguage('es')">
           <img src="assets/flags/es.png" alt="Español">
@@ -32,7 +32,7 @@
         </li>
       </ul>
     </li>
-    
+
 
   </ul>
 </nav>

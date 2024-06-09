@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Learned Words</h1>
+  <div class="legend">
+    <p><b>Color Scheme:</b></p>
+    <ul>
+      <li>Green: Easy (1-5 strokes)</li>
+      <li>Blue: Medium (6-10 strokes)</li>
+      <li>Orange: Hard (11-17 strokes)</li>
+      <li>Red: Very Hard (18+ strokes)</li>
+    </ul>
+  </div>
+  <section class="word-list">
+    @for (word of favWords; track word) {
+      <div class="word-card">
+        <h2 [style.color]="getStrokeColor(parseInt(word.stroke_count))">{{ word.hanzi }}</h2>
+        <p>{{ word.pinyin }} ({{ word.stroke_count }} strokes)</p>
+        <p>{{ truncateDefinition(word.translation) }}</p>
+      </div>
+    }
+
+  </section>
+</div>

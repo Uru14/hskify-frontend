@@ -1,0 +1,160 @@
+/*
+.profile-container {
+  font-family: Arial, sans-serif;
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+
+  flex: 1;
+  box-sizing: border-box;
+
+}
+
+.col-left {
+  background-color: #e6e6e6;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.col-right{
+  border: 1px solid;
+  background-color: #fd0000;
+  flex: 2;
+}
+
+.usr-image img{
+  width: 200px;
+}
+.usr-name{
+  font-size: 32px;
+}
+
+.usr-followes a{
+  text-decoration: none;
+}
+.usr-controls button{
+  font-size: 24px;
+}
+
+.list-info ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-info ul li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+*/
+
+/* General */
+.profile-container {
+  font-family: Arial, sans-serif;
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Para soporte responsivo */
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.col-left, .col-right {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Column */
+.col-left {
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.usr-image img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.usr-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.usr-followes a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.usr-controls button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.usr-controls button:hover {
+  background-color: #0056b3;
+}
+
+/* List Info */
+.list-info ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.list-info ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-info ul li img {
+  width: 20px;
+  height: 20px;
+}
+
+.list-info ul li:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Right Column */
+.col-right {
+  flex: 2;
+  min-width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .col-left, .col-right {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

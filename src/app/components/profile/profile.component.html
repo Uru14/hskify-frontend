@@ -1,0 +1,43 @@
+<section class="profile-container">
+  <div class="col-left">
+    <div class="usr-image">
+      <img src="./assets/user.png" alt="image of user profile">
+    </div>
+    <div class="usr-name">
+      <h3>Diego Terevinto</h3>
+    </div>
+    <div class="usr-followes">
+      <a href="">Followes 100</a>
+    </div>
+    <div class="usr-controls">
+      <button>Follow</button>
+    </div>
+    <div class="list-info">
+      <ul>
+        <li>
+          <div class="img"><img src="./assets/location.png" alt=""></div>
+          Valencia, Spain
+        </li>
+        <li>
+          <div class="img"><img src="./assets/calendar.png" alt=""></div>
+          Se unió el {{ user_info.registration_date | date: 'dd-MM-yyyy'}}
+        </li>
+        <li routerLink="learned-words">
+          <div class="img"><img src="./assets/fav.png" alt=""></div>
+          Palabras aprendidas
+        </li>
+        <li routerLink="achievements">
+          <div class="img"><img src="./assets/achievement.png" alt=""></div>
+          Logros
+        </li>
+        <li routerLink="leaderboard">
+          <div class="img"><img src="./assets/leaderboard.png" alt=""></div>
+          Tabla de clasificación
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-right">
+    <router-outlet></router-outlet>
+  </div>
+</section>

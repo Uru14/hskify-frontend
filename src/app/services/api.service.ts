@@ -72,7 +72,7 @@ export class ApiService {
   getUserLogged() {
     const token = this.getToken();
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-    console.log(token)
+    console.log("token: ", token)
     return this.http.get<UserResponse>(`${this.apiUrl}/users/me`, { headers });
   }
 
@@ -97,6 +97,12 @@ export class ApiService {
     const token = this.getToken();
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     return this.http.get<CharacterDetailResponse>(`${this.apiUrl}/characters/${id}`, { headers });
+  }
+
+  getUserFavorites(): Observable<CharacterDetailResponse[]> {
+    const token = this.getToken();
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.get<CharacterDetailResponse[]>(`${this.apiUrl}/users/favorites`, { headers });
   }
 
   addFavorite(charId:number): Observable<any>{

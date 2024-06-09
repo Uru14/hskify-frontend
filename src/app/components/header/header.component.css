@@ -4,13 +4,10 @@
   justify-content: space-between;
   background-color: #e7e7e7;
   max-width: 1366px;
-  margin: 0 auto;
   font-family: Arial, sans-serif;
   font-weight: bold;
-
+  margin: 0 auto 20px;
 }
-
-
 
 .navbar a {
   color: black;
@@ -116,7 +113,7 @@
   z-index: 1;
   list-style-type: none;
   padding: 0;
-  width: auto;
+  width: max-content;
 }
 
 .dropdown-content li a {
