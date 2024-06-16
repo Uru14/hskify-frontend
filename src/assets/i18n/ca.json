@@ -263,6 +263,41 @@
         "TRANSLATION": "cinc tasses de cafè"
       }
     ]
+  },
+  "PROFILE": {
+    "SIDE_INFO": {
+      "FOLLOWERS": "Seguidors",
+      "DATE": "Es va unir el ",
+      "LEARNED_WORDS": "Paraules apreses",
+      "ACHIEVEMENTS": "Assoliments",
+      "LEADERBOARD": "Taula de classificació"
+    },
+    "LEADERBOARD": {
+      "TABLE": "TAULA DE CLASSIFICACIÓ",
+      "FILTER_MODE": "FILTRAR PER MODALITAT",
+      "OPTION_ALL": "TOTS",
+      "OPTION_HH": "Hanzi-Hanzi",
+      "OPTION_HP": "Hanzi-Pinyin",
+      "OPTION_HT": "Hanzi-Traducció",
+      "USER": "Usuari",
+      "SCORE": "Puntuació",
+      "DIFFICULTY": "Dificultat",
+      "PARAMETER": "MODALITAT"
+    },
+    "ACHIEVEMENTS": {
+      "TITLE": "Els Teus Assoliments",
+      "UNLOCKED": "Encara no desbloquejat!"
+    },
+    "LEARNED_WORDS": {
+      "TITLE": "Paraules Apreses",
+      "LEGEND_TITLE": "Esquema de Colors:",
+      "LEGEND_OPT1": "Verd: Fàcil (1-5 traços)",
+      "LEGEND_OPT2": "Blau: Mitjà (6-10 traços)",
+      "LEGEND_OPT3": "Taronja: Difícil (11-17 traços)",
+      "LEGEND_OPT4": "Vermell: Molt Difícil (18+ traços)",
+      "STROKES": "traços"
+    }
   }
+
 }
 

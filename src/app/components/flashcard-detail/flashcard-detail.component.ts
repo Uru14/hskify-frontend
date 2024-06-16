@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import {MatIcon} from "@angular/material/icon";
 import {NgClass} from "@angular/common";
-import {ApiService, CharacterDetailResponse, CharacterFlashcardResponse} from "../../services/api.service";
+import {ApiService, CharacterDetailResponse} from "../../services/api.service";
 
 @Component({
   selector: 'app-flashcard-detail',
@@ -41,6 +41,18 @@ export class FlashcardDetailComponent {
       },
       complete: () => {
         console.log('Word marked as favorite');
+      }
+    })
+
+    this.apiService.getFavCount().subscribe({
+      next: (response) => {
+        console.log('response: ',response)
+      },
+      error: (error) => {
+        console.error('There was an error!', error);
+      },
+      complete: () => {
+        console.log('completed');
       }
     })
   }

@@ -4,12 +4,14 @@ import {
   ApiService,
   CharacterDetailResponse,
 } from "../../services/api.service";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-learned-words',
   standalone: true,
   imports: [
-    NgForOf
+    NgForOf,
+    TranslateModule
   ],
   templateUrl: './learned-words.component.html',
   styleUrl: './learned-words.component.css'

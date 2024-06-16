@@ -1,3 +1,4 @@
+/*
 #fondo {
     width:100%;
     height:100%;
@@ -88,8 +89,8 @@
 
 .close-icon {
   display: flex;
-  margin-left: auto; 
-  margin-top: auto; 
+  margin-left: auto;
+  margin-top: auto;
   font-size: 35px;
   cursor: pointer;
   height: 35px;
@@ -103,3 +104,100 @@
   flex-direction: column;
   text-align: left;
 }
+*/
+
+#fondo {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+#modal {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  position: fixed;
+  width: 70%;
+  max-width: 900px;
+  max-height: 80%;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.left-column, .right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.left-column {
+  border-right: 1px solid #ddd;
+}
+
+.right-column {
+  padding-left: 20px;
+}
+
+.hanzi-container {
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.example-sentence {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.info > div {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.favorite-icon {
+  display: flex;
+  align-self: flex-start;
+  font-size: 35px;
+  flex: 10%;
+  width: 100%;
+  cursor: pointer;
+}
+.close-icon {
+  display: flex;
+  align-self: flex-end;
+  font-size: 35px;
+  cursor: pointer;
+  height: 35px;
+  padding-right: 10px;
+}
+
+
+.white {
+  color: #b6b6b6;
+}
+
+.red {
+  color: red;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+

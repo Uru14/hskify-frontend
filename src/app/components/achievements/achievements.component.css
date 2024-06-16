@@ -1,0 +1,33 @@
+.achievements-container {
+  text-align: center; /* Center the content horizontally */
+  margin: 20px auto; /* Add some margin for spacing */
+  padding: 10px; /* Add some padding for aesthetics */
+  border: 1px solid #ddd; /* Optional border for container */
+}
+
+.cards-wrapper {
+  display: flex; /* Arrange cards horizontally */
+  flex-wrap: wrap; /* Allow cards to wrap to multiple lines */
+  justify-content: space-between; /* Distribute cards evenly */
+  margin: 0 auto; /* Center cards within container */
+}
+
+.card {
+  width: 200px; /* Set card width */
+  margin: 10px; /* Add margin for spacing between cards */
+  text-align: center; /* Center content within cards */
+  padding: 15px; /* Add padding for aesthetics */
+  border: 1px solid #ddd; /* Optional border for cards */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+}
+
+.card img {
+  width: 100px; /* Set image width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Add some space below the image */
+}
+
+.card h3, .card p {
+  margin-bottom: 5px; /* Add some space between elements */
+}

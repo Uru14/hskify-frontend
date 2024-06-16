@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {Observable, skip} from 'rxjs';
+import {Observable, skip, tap} from 'rxjs';
 import {CookieService} from "ngx-cookie-service";
 
 export interface HanziSimpleResponse {
@@ -36,6 +36,21 @@ export interface UserResponse {
   email: string;
   name: string;
   registration_date: Date
+  imageURL: string;
+}
+
+export interface Achievement {
+  id: number;
+  name: string;
+  description: string;
+  imageUrl: string;
+}
+
+export interface LeaderBoardScores {
+  user_name: string;
+  score: number;
+  difficulty: string;
+  parameters: string;
 }
 
 @Injectable({
@@ -43,7 +58,7 @@ export interface UserResponse {
 })
 export class ApiService {
 
-  private apiUrl = 'http://127.0.0.1:8000';
+  private apiUrl = 'https://hskify-backend.onrender.com';
 
   constructor(private http: HttpClient, private cookies: CookieService) { }
 
@@ -73,7 +88,7 @@ export class ApiService {
     const token = this.getToken();
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     console.log("token: ", token)
-    return this.http.get<UserResponse>(`${this.apiUrl}/users/me`, { headers });
+    return this.http.get<UserResponse>(`${this.apiUrl}/users/me/`, { headers });
   }
 
 
@@ -116,5 +131,22 @@ export class ApiService {
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     const body = {score, difficulty, parameters}
     return this.http.post<any>(`${this.apiUrl}/game/${gameId}/score`, body, {headers})
+  }
+
+
+  getFavCount() {
+    const token = this.getToken();
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.get<any>(`${this.apiUrl}/users/favorite/count`, { headers });
+  }
+
+  getUserAchievement(): Observable<Achievement[]> {
+    const token = this.getToken();
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.get<Achievement[]>(`${this.apiUrl}/users/achievement`, { headers });
+  }
+
+  getUsersScores(): Observable<LeaderBoardScores[]> {
+    return this.http.get<LeaderBoardScores[]>(`${this.apiUrl}/users/scores`);
   }
 }

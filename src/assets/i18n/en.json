@@ -263,5 +263,40 @@
         "TRANSLATION": "five cups of coffee"
       }
     ]
+  },
+  "PROFILE": {
+    "SIDE_INFO": {
+      "FOLLOWERS": "Followers",
+      "DATE": "Joined in ",
+      "LEARNED_WORDS": "Learned words",
+      "ACHIEVEMENTS": "Achievements",
+      "LEADERBOARD": "Leaderboard"
+    },
+    "LEADERBOARD": {
+      "TABLE": "LEADERBOARD",
+      "FILTER_MODE": "FILTER BY MODE",
+      "OPTION_ALL": "ALL",
+      "OPTION_HH": "Hanzi-Hanzi",
+      "OPTION_HP": "Hanzi-Pinyin",
+      "OPTION_HT": "Hanzi-Translation",
+      "USER": "User",
+      "SCORE": "Score",
+      "DIFFICULTY": "Difficulty",
+      "PARAMETER": "MODE"
+    },
+    "ACHIEVEMENTS": {
+      "TITLE": "Your Achievements",
+      "UNLOCKED": "Not unlocked yet!"
+    },
+    "LEARNED_WORDS": {
+      "TITLE": "Learned Words",
+      "LEGEND_TITLE": "Color Scheme:",
+      "LEGEND_OPT1": "Green: Easy (1-5 strokes)",
+      "LEGEND_OPT2": "Blue: Medium (6-10 strokes)",
+      "LEGEND_OPT3": "Orange: Hard (11-17 strokes)",
+      "LEGEND_OPT4": "Red: Very Hard (18+ strokes)",
+      "STROKES": "strokes"
+    }
+
   }
 }

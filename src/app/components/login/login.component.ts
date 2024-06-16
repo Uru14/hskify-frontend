@@ -22,6 +22,8 @@ export class LoginComponent {
   login(){
     this.apiService.login(this.email, this.password).subscribe({
       next: (response) => {
+        console.log("response: ", response)
+        this.apiService.deleteToken();
         this.apiService.setToken(response.access_token);
         this.router.navigate(['/']);
       },

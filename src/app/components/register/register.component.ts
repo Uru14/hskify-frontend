@@ -31,6 +31,8 @@ export class RegisterComponent {
     this.apiService.register(this.email, this.password, this.name).subscribe({
 
         next: (response) => {
+          console.log("response: ", response)
+          this.apiService.deleteToken();
           this.apiService.setToken(response.access_token);
           this.router.navigate(['/']);
         },

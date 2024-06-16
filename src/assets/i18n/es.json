@@ -264,6 +264,40 @@
           "TRANSLATION": "cinco tazas de café"
         }
       ]
+    },
+    "PROFILE": {
+      "SIDE_INFO": {
+        "FOLLOWERS": "Seguidores",
+        "DATE": "Se unió el  ",
+        "LEARNED_WORDS": "Palabras aprendidas",
+        "ACHIEVEMENTS": "Logros",
+        "LEADERBOARD": "Tabla de clasificación"
+      },
+      "LEADERBOARD": {
+        "TABLE": "TABLA DE CLASIFICACIÓN",
+        "FILTER_MODE": "FILTRAR POR MODO",
+        "OPTION_ALL": "TODOS",
+        "OPTION_HH": "Hanzi-Hanzi",
+        "OPTION_HP": "Hanzi-Pinyin",
+        "OPTION_HT": "Hanzi-Traducción",
+        "USER": "Usuario",
+        "SCORE": "Puntuación",
+        "DIFFICULTY": "Dificultad",
+        "PARAMETER": "MODO"
+      },
+      "ACHIEVEMENTS": {
+        "TITLE": "Tus Logros",
+        "UNLOCKED": "¡No desbloqueado aún!"
+      },
+      "LEARNED_WORDS": {
+        "TITLE": "Palabras Aprendidas",
+        "LEGEND_TITLE": "Esquema de Colores:",
+        "LEGEND_OPT1": "Verde: Fácil (1-5 trazos)",
+        "LEGEND_OPT2": "Azul: Medio (6-10 trazos)",
+        "LEGEND_OPT3": "Naranja: Difícil (11-17 trazos)",
+        "LEGEND_OPT4": "Rojo: Muy Difícil (18+ trazos)",
+        "STROKES": "trazos"
+      }
     }
 }
 

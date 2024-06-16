@@ -1,13 +1,16 @@
 <section class="profile-container">
   <div class="col-left">
+    <div class="logout-container">
+      <img src="./assets/logout.png" alt="logout icon" class="logout-icon" (click)="logout()">
+    </div>
     <div class="usr-image">
-      <img src="./assets/user.png" alt="image of user profile">
+      <img src="{{user_info.imageURL}}" alt="image of user profile">
     </div>
     <div class="usr-name">
-      <h3>Diego Terevinto</h3>
+      <h3>{{ user_info.name }}</h3>
     </div>
     <div class="usr-followes">
-      <a href="">Followes 100</a>
+      <a href="">{{ "PROFILE.SIDE_INFO.FOLLOWERS" | translate}} 100</a>
     </div>
     <div class="usr-controls">
       <button>Follow</button>
@@ -20,19 +23,19 @@
         </li>
         <li>
           <div class="img"><img src="./assets/calendar.png" alt=""></div>
-          Se unió el {{ user_info.registration_date | date: 'dd-MM-yyyy'}}
+          {{ "PROFILE.SIDE_INFO.DATE" | translate}} {{ user_info.registration_date | date: 'dd-MM-yyyy'}}
         </li>
         <li routerLink="learned-words">
           <div class="img"><img src="./assets/fav.png" alt=""></div>
-          Palabras aprendidas
+          {{ "PROFILE.SIDE_INFO.LEARNED_WORDS" | translate}}
         </li>
         <li routerLink="achievements">
           <div class="img"><img src="./assets/achievement.png" alt=""></div>
-          Logros
+          {{ "PROFILE.SIDE_INFO.ACHIEVEMENTS" | translate}}
         </li>
         <li routerLink="leaderboard">
           <div class="img"><img src="./assets/leaderboard.png" alt=""></div>
-          Tabla de clasificación
+          {{ "PROFILE.SIDE_INFO.LEADERBOARD" | translate}}
         </li>
       </ul>
     </div>

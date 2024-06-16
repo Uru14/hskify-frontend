@@ -1,1 +1,25 @@
-<p>achievements works!</p>
+<div class="achievements-container">
+  <h2 class="title">{{ "PROFILE.ACHIEVEMENTS.TITLE" | translate}}</h2>
+  <div class="cards-wrapper">
+    @for (num of total_achievements; track num) {
+
+        @if (achievements[num] ) {
+
+          @for (achv of achievements; track achv){
+            <div class="card">
+              <img src={{achv.imageUrl}} alt="Achievement Trophy">
+              <h3>{{ achv.name }} </h3>
+              <p>{{ achv.description }}</p>
+            </div>
+          }
+
+        } @else {
+          <div class="card">
+            <img src='/assets/trophy.png' alt="Achievement Trophy">
+            <h3>{{ "PROFILE.ACHIEVEMENTS.UNLOCKED" | translate}}</h3>
+          </div>
+        }
+    }
+
+  </div>
+</div>
