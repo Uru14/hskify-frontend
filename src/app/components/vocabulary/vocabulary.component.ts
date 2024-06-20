@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import {MatIcon} from "@angular/material/icon";
 import {ApiService, CharacterDetailResponse, CharacterFlashcardResponse} from "../../services/api.service";
@@ -14,7 +14,7 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './vocabulary.component.html',
   styleUrl: './vocabulary.component.css'
 })
-export class VocabularyComponent {
+export class VocabularyComponent implements OnInit{
 
   listCharacters: CharacterFlashcardResponse[];
   characterDetail: CharacterDetailResponse;

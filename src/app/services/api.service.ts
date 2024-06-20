@@ -58,9 +58,37 @@ export interface LeaderBoardScores {
 })
 export class ApiService {
 
+  constructor(private http: HttpClient, private cookies: CookieService) {
+    this.setApiUrl();
+  }
+
+  private foo = 2;
   private apiUrl = 'https://hskify-backend.onrender.com';
 
-  constructor(private http: HttpClient, private cookies: CookieService) { }
+  private setApiUrl(): void {
+    if (this.foo == 2) {
+      this.apiUrl = 'https://hskify-backend.onrender.com';
+    } else if (this.foo == 1) {
+      this.apiUrl = 'http://127.0.0.1:8000';
+    }
+  }
+
+
+  getWordOfDay(): Observable<HanziSimpleResponse> {
+    return this.http.get<HanziSimpleResponse>(`${this.apiUrl}/wordDay/`);
+  }
+
+  get20Characters(skip: number): Observable<CharacterFlashcardResponse[]> {
+    let params = new HttpParams()
+      .set('skip', skip.toString())
+    return this.http.get<CharacterFlashcardResponse[]>(`${this.apiUrl}/characters/`, { params });
+  }
+
+
+  getAllCharacters(): Observable<CharacterFlashcardResponse[]>{
+    return this.http.get<CharacterFlashcardResponse[]>(`${this.apiUrl}/characters/all`);
+  }
+
 
   register(email: string, password: string,  name: string): Observable<any> {
     return this.http.post<any>(`${this.apiUrl}/users/`, { email, password, name});
@@ -89,22 +117,6 @@ export class ApiService {
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     console.log("token: ", token)
     return this.http.get<UserResponse>(`${this.apiUrl}/users/me/`, { headers });
-  }
-
-
-  getWordOfDay(): Observable<HanziSimpleResponse> {
-    return this.http.get<HanziSimpleResponse>(`${this.apiUrl}/wordDay/`);
-  }
-
-  get20Characters(skip: number): Observable<CharacterFlashcardResponse[]> {
-    let params = new HttpParams()
-      .set('skip', skip.toString())
-    return this.http.get<CharacterFlashcardResponse[]>(`${this.apiUrl}/characters/`, { params });
-  }
-
-
-  getAllCharacters(): Observable<CharacterFlashcardResponse[]>{
-    return this.http.get<CharacterFlashcardResponse[]>(`${this.apiUrl}/characters/all`);
   }
 
 

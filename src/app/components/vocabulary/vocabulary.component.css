@@ -1,3 +1,4 @@
+
 .voc-container {
   font-family: Arial, sans-serif;
   max-width: 1366px;
@@ -77,4 +78,11 @@
   display:none;
 }
 
+@media (max-width: 767px) {
+  .card-style {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 0 0 20px;
+  }
+}
 

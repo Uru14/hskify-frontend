@@ -7,12 +7,12 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({ selector: 'app-home',
     standalone: true,
     templateUrl: './home.component.html',
-    styleUrl: './home.component.css', 
-    imports: [RouterLink, TranslateModule], 
+    styleUrl: './home.component.css',
+    imports: [RouterLink, TranslateModule],
    })
 
 @Injectable()
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
   wordOfDay: HanziSimpleResponse;
 

@@ -1,3 +1,4 @@
+<!--
 <div id="fondo">
 
 </div>
@@ -31,3 +32,38 @@
 
 </div>
 
+-->
+
+<div id="fondo"></div>
+
+<div id="modal">
+  <div class="modal-header">
+    <mat-icon class="favorite-icon" [ngClass]="{ 'white': !isFavorite, 'red': isFavorite }" (click)="addFav(charDetail.id)">
+      favorite
+    </mat-icon>
+    <mat-icon class="close-icon" (click)="closeDetail()">close</mat-icon>
+  </div>
+
+  <div class="content">
+    <div class="left-column">
+      <div id="modal-hanzi" class="hanzi-container">{{charDetail.hanzi}}</div>
+      <h2>SENTENCE EXAMPLE</h2>
+      <div id="modal-frase" class="example-sentence">{{charDetail.example_sentences[0].sentence}}</div>
+      <h2>SENTENCE EXAMPLE TRANSLATION</h2>
+      <div id="modal-frase-trans" class="example-sentence">{{charDetail.example_sentences[0].translation.toUpperCase()}}</div>
+    </div>
+
+    <div class="right-column">
+      <div class="info">
+        <h2>PINYIN</h2>
+        <div id="modal-pinyin" class="pinyin">{{charDetail.pinyin.toUpperCase()}}</div>
+        <h2>TRANSLATION</h2>
+        <div id="modal-translation" class="translation">{{charDetail.translation.toUpperCase()}}</div>
+        <h2>NUMBER OF STROKES</h2>
+        <div id="modal-strokes" class="strokes">{{charDetail.stroke_count}}</div>
+        <div id="modal-other" class="other"></div>
+      </div>
+    </div>
+  </div>
+
+</div>

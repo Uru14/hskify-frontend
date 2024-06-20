@@ -45,7 +45,9 @@ export class LeaderboardComponent implements OnInit{
     if (this.selectedParameter === 'all') {
       this.filteredLeaderboard = this.scoreInfo;
     } else {
-      this.filteredLeaderboard = this.scoreInfo.filter(score => score.parameters === this.selectedParameter);
+      this.filteredLeaderboard = this.scoreInfo.filter(score =>
+        score.parameters === this.selectedParameter);
     }
   }
 }
+

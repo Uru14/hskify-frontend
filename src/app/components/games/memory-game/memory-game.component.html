@@ -1,25 +1,26 @@
-<body class="container">
-  <div id="wrapper" class="wrapper hide">
-    <div class="stats-container">
-      <div id="moves-count"></div>
-      <div id="time"></div>
-      
-    </div>
-    <div class="game-container"></div>
-    <button id="stop" class="hide">{{"MEMORY-GAME.STOP" | translate}}</button>
-  </div>
-  <div class="controls-container">
-    <div class="mode-buttons">
-      <button id="hanzi-hanzi" (click)="selectMode2($event)">{{"MEMORY-GAME.HAN-HAN" | translate}}</button>
-      <button id="hanzi-pinyin" (click)="selectMode2($event)">{{"MEMORY-GAME.HAN-PIN" | translate}}</button>
-      <button id="hanzi-trans" (click)="selectMode2($event)">{{"MEMORY-GAME.HAN-TRANS" | translate}}</button>
-      <button id="easy" (click)="selectMode($event)">{{"MEMORY-GAME.EASY-MODE" | translate}}</button>
-      <button id="medium" (click)="selectMode($event)">{{"MEMORY-GAME.MEDIUM-MODE" | translate}}</button>
-      <button id="hard" (click)="selectMode($event)">{{"MEMORY-GAME.HARD-MODE" | translate}}</button>
-    </div>
-    <p id="result"></p>
-    <div id="score"></div>
-    <button id="start" [disabled]="!gameMode">{{"MEMORY-GAME.START" | translate}}</button>
 
+<body class="container">
+<div id="wrapper" class="wrapper hide">
+  <div class="stats-container">
+    <div id="moves-count"></div>
+    <div id="time"></div>
   </div>
+  <div class="game-container"></div>
+  <button id="stop" class="hide">{{"MEMORY-GAME.STOP" | translate}}</button>
+</div>
+<div class="controls-container">
+  <div class="mode-buttons">
+    <button id="hanzi-hanzi" (click)="selectMode2($event)">{{"MEMORY-GAME.HAN-HAN" | translate}}</button>
+    <button id="hanzi-pinyin" (click)="selectMode2($event)">{{"MEMORY-GAME.HAN-PIN" | translate}}</button>
+    <button id="hanzi-trans" (click)="selectMode2($event)">{{"MEMORY-GAME.HAN-TRANS" | translate}}</button>
+  </div>
+  <div class="mode-buttons">
+    <button id="easy" (click)="selectMode($event)">{{"MEMORY-GAME.EASY-MODE" | translate}}</button>
+    <button id="medium" (click)="selectMode($event)">{{"MEMORY-GAME.MEDIUM-MODE" | translate}}</button>
+    <button id="hard" (click)="selectMode($event)">{{"MEMORY-GAME.HARD-MODE" | translate}}</button>
+  </div>
+  <p id="result"></p>
+  <div id="score"></div>
+  <button id="start" [disabled]="!gameMode">{{"MEMORY-GAME.START" | translate}}</button>
+</div>
 </body>
